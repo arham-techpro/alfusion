@@ -39,10 +39,10 @@ Reusable Components
 .color-a,.hover-color-a:hover{
     color: var(--color-a);
 }
-.color-white-main,.hover-color-white-main:hover{
+.color-white,.hover-color-white:hover{
     color: var(--color-white-main);
 }
-.color-black-main,.hover-color-black-main:hover{
+.color-black,.hover-color-black:hover{
     color: var(--color-black-main);
 }
 .color-para-light,.hover-color-para-light:hover{
@@ -54,13 +54,13 @@ Reusable Components
     background: var(--color-a);
 }
 .bg-white-main,.hover-bg-white-main:hover{
-    color: var(--color-white-main);
+    background: var(--color-white-main);
 }
 .bg-black-main,.hover-bg-black-main:hover{
-    color: var(--color-black-main);
+    background: var(--color-black-main);
 }
 .bg-para-light,.hover-bg-para-light:hover{
-    color: var(--color-para-light);
+    background: var(--color-para-light);
 }
 
 
@@ -88,6 +88,9 @@ Reusable Components
 .normal-button{
     padding: 16px 40px ;
 }
+.sm-button{
+    padding: 10px 24px;
+}
 .button::before{
     content: '';
     height: 100%;
@@ -98,16 +101,29 @@ Reusable Components
     position: absolute;
     transform: scaleX(0);
     transform-origin: left;
-    transition: .8s ease;
+    transition: .5s ease;
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.57, -0.24)
     /* transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); */
 }
 .hover-bg-black-before::before{
     background: var(--color-black-main);
 }
+.hover-bg-white-before::before{
+    background: var(--color-white-main);
+}
 .button:hover:before{
     transform: scaleX(1);
 }
+
+
+/* ======================================
+Fonts Sizes and Specing
+====================================== */
+.font-56{
+    font-size: 56px;
+}
+
+/* Margins */
 
 /* ======================================
 Header
@@ -140,4 +156,18 @@ Header
 }
 .custom-nav .nav-item:not(:last-child){
     margin-right: 32px;
+}
+
+
+/* ======================================
+Banner
+====================================== */
+.single-banner{
+    background: red;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+.single-banner h2{
+    letter-spacing: 1.12px;
 }
