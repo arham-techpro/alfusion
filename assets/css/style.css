@@ -84,6 +84,7 @@ Reusable Components
     display: inline-block;
     position: relative;
     z-index: 1;
+    transition: .5s ease;
 }
 .normal-button{
     padding: 16px 40px ;
