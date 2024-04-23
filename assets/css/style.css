@@ -163,7 +163,6 @@ Header
 Banner
 ====================================== */
 .single-banner{
-    background: red;
     display: flex;
     align-items: center;
     padding: 60px;
