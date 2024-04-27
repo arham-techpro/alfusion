@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
     margin: 0;
@@ -17,18 +17,46 @@ body{
 a{
     text-decoration: none;
 }
-
+ul{
+    list-style: none;
+}
 :root{
     --color-a:#B70000;
+    --color-b:#0077B6;
+    --color-c:#FF5733;
     --color-white-main:#fff;
-    --color-black-main:#181818;
-    --color-para-light:#989898;
+    --color-black-main:#131921;
+    --color-para-light:#61656A;
+    --color-para-dark:#333;
 }
 
+::-webkit-scrollbar{
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-a);
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-c);
+  }
+  
 
 .container{
     width: 1280px;
     max-width: 1280px;
+}
+.slider-container{
+    width: 1304px;
+    margin: auto;
+    padding: 1px 10px;
 }
 input:focus{
     outline: none;
@@ -39,6 +67,12 @@ Reusable Components
 .color-a,.hover-color-a:hover{
     color: var(--color-a);
 }
+.color-b,.hover-color-b:hover{
+    color: var(--color-b);
+}
+.color-c,.hover-color-c:hover{
+    color: var(--color-c);
+}
 .color-white,.hover-color-white:hover{
     color: var(--color-white-main);
 }
@@ -48,10 +82,19 @@ Reusable Components
 .color-para-light,.hover-color-para-light:hover{
     color: var(--color-para-light);
 }
+.color-para-dark,.hover-color-para-dark:hover{
+    color: var(--color-para-dark);
+}
 
 
 .bg-a,.hover-bg-a:hover{
     background: var(--color-a);
+}
+.bg-b,.hover-bg-b:hover{
+    background: var(--color-b);
+}
+.bg-c,.hover-bg-c:hover{
+    background: var(--color-c);
 }
 .bg-white-main,.hover-bg-white-main:hover{
     background: var(--color-white-main);
@@ -92,13 +135,18 @@ Reusable Components
 .sm-button{
     padding: 10px 24px;
 }
+.squire-sm-button{
+    height: 36px;
+    width: 36px;
+}
 .button::before{
     content: '';
-    height: 100%;
+    height: 105%;
     width: 100%;
     z-index: -1;
     left: 0;
     top: 0;
+    bottom: 0;
     position: absolute;
     transform: scaleX(0);
     transform-origin: left;
@@ -115,7 +163,26 @@ Reusable Components
 .button:hover:before{
     transform: scaleX(1);
 }
+.link-button-b:hover{
+    color: var(--color-black-main);
+}
+.link-button-b:hover i{
+    color: var(--color-b);
+}
 
+
+
+.content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-title{
+    font-size: 32px;
+    font-weight: 500;
+}
 
 /* ======================================
 Fonts Sizes and Specing
@@ -123,14 +190,63 @@ Fonts Sizes and Specing
 .font-56{
     font-size: 56px;
 }
+.font-20{
+    font-size: 20px;
+}
 
+/* gaps */
+.gap-y-24{
+    row-gap: 24px;
+}
 /* Margins */
 
+.mb-32{
+    margin-bottom: 32px;
+}
+/* paddings */
+.pt-80{
+    padding-top: 80px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.py-80{
+    padding: 80px 0px;
+}
+.pt-60{
+    padding-top: 60px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+.py-60{
+    padding: 60px 0px;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.py-80{
+    padding: 80px 0px;
+}
+.p-20{
+    padding: 20px;
+}
 /* ======================================
 Header
 ====================================== */
+.header{
+    position: sticky;
+    width: 100%;
+    z-index: 99999;
+    background: var(--color-white-main);
+    top: -94px;
+}
+
 .logo{
-    width: 75px;
+    width: 125px;
 }
 .header-search{
     width: 750px;
@@ -160,6 +276,7 @@ Header
 }
 
 
+
 /* ======================================
 Banner
 ====================================== */
@@ -170,4 +287,126 @@ Banner
 }
 .single-banner h2{
     letter-spacing: 1.12px;
+}
+
+/* ======================================
+Category Slider
+====================================== */
+.category-slider .slick-slide{
+    margin: 0px 12px;
+}
+.single-category:hover{
+    transform: scale(1.01) translateY(-5px);
+    cursor: pointer;
+    transition: .3s ease;
+}
+.single-category:hover p{
+    color: var(--color-a);
+}
+
+
+/* ======================================
+Featured Image Box
+====================================== */
+.featured-image-box{
+    height: 310px;
+    padding: 30px;
+}
+.single-featured-images:last-child .row{
+    flex-direction: row-reverse;
+}
+
+/* ======================================
+Single Prodct Box
+====================================== */
+.featured-product-slider .slick-slide , .woman-fashion-slider .slick-slide,.kids-item-slider .slick-slide{
+    margin: 0px 10px;
+}
+/* ------------------------------------------------- */
+.single-product-box {
+    background: #FAFAFA;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    border: 1px solid #FAFAFA;
+}
+.offer-badge{
+    left: 12px;
+    top: 12px;
+    z-index: 99;
+    font-weight: 500;
+}
+.product-overly{
+    background: rgba(0, 0, 0, 20%);
+    padding: 12px;
+    height: 240px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleY(0);
+    transition: .3s ease;
+    transform-origin: bottom;
+}
+.add-tocart-btn .button{
+    font-size: 14px;
+    padding: 8px 16px;
+}
+.single-product-box:hover{
+    border-color: var(--color-c);
+}
+.single-product-box:hover .product-overly{
+    transform: scaleY(1);
+    
+}
+.single-product-image{
+    width: 100%;
+    height: 240px;
+}
+.single-product-box img{
+    height: 240px;
+    object-fit: cover;
+
+}
+.product-detail h4 {
+    height: 40px;
+}
+.pricing-del::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: var(--color-black-main);
+    top: 44%;
+    left: 0px;
+}
+.no-slider {
+    justify-content: space-between;
+    gap: 20px 0px;
+}
+.no-slider .single-product-box{
+    width: 237px;
+}
+
+
+
+/* ======================================
+Footer
+====================================== */
+.main-footer{
+    margin-top: 80px;
+    background: #F7F7F7;
+}
+.footer-box h4{
+    letter-spacing: -0.48px;
+}
+.op-p-8{
+    opacity: .8;
+}
+.footer-social-box li a{
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--color-black-main);
+}
+.footer-social-box li a:hover{
+    border-color: var(--color-a);
 }
