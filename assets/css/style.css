@@ -284,6 +284,10 @@ nav.navbar.navbar-expand-lg.py-0.justify-content-between {
 .header-search input{
     height: 50px;
 }
+.search_icon{
+    right: 22px;
+    transform: translateY(-50%);
+}
 .hover-border-a:hover{
     border-color: var(--color-a) !important;
 }
