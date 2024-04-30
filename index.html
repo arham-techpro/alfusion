@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/lib/slick/slick/slick-theme.css">
 
     <!-- Custom -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?v1">
 
 
 
@@ -27,58 +27,72 @@
     Header Section
     ====================================== -->
     <header class="header">
-        <div class="container">
-            <div class="header-top py-4 d-flex justify-content-between align-items-center">
-                <a href="#"><img src="./assets/img/logo.png" alt="Logo" class="logo"></a>
-
-                <div class="header-search d-flex overflow-hidden">
-                    <input type="text" class="ps-3 border-a w-100 hover-border-black border-end-0 rounded-start-3" placeholder="Search for products, brand and more...">
-                    <button class="button normal-button border-0 bg-a color-white fw-semibold hover-bg-black-before rounded-end-3 overflow-hidden">SEARCH</button>
-                </div>
-
-                <div class="header-top-right d-flex gap-4 align-items-center">
-                    <span class="me-1 position-relative cursor-pointer">
-                        <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">0</span>
-                        <img src="./assets/img/icons/heart.svg" alt="Heart Icon">
+        <div class="header-top py-2 bg-b">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center font-14 color-white">
+                    <span><img src="./assets/img/icons/phone.svg" alt="Phone Icon"> +8801236562566</span>
+                    <span>Get 50% off on selected items <span class="mx-4"> | </span> <a href="#" class="color-white hover-color-black"><u>Shop Now</u></a></span>
+                    <span>
+                        <select name="#" id="#" class="border-0 bg-tran color-white cursor-pointer">
+                            <option value="#">Eng</option>
+                            <option value="#">Bn</option>
+                        </select>
+                        <select name="#" id="#" class="ms-3 border-0 bg-tran color-white cursor-pointer">
+                            <option value="#">Location</option>
+                            <option value="#">Dhaka</option>
+                            <option value="#">Narayanganj</option>
+                            <option value="#">Rupganj</option>
+                            <option value="#">Munshiganj</option>
+                            <option value="#">Gazipur</option>
+                            <option value="#">Mohamamdpur</option>
+                        </select>
                     </span>
-                    <span class="me-1 position-relative cursor-pointer">
-                        <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">3</span>
-                        <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
-                    </span>
-                    <div class="d-flex align-items-center cursor-pointer">
-                        <img src="./assets/img/icons/user.svg" alt="Heart Icon">
-                        <span class="ms-2">
-                            <span class="color-para-light">My Account</span>
-                            <p class="color-black fw-bold mb-0">Login</p>
-                        </span>
-                    </div>
                 </div>
-
+                
             </div>
         </div>
+
         <div class="header-bottom">
             <div class="container">
-                <nav class="navbar navbar-expand-lg py-0">
+                <nav class="navbar navbar-expand-lg py-0 justify-content-between">
+                    <a href="#"><img src="./assets/img/logo.png" alt="Logo" class="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse custom-nav" id="navbarNavDropdown">
                         <ul class="navbar-nav align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link p-0 fs-5 color-black hover-color-a" aria-current="page" href="#"><i class="fa fa-bars pe-2"></i> Categories </a>
+                                <a class="nav-link p-0 fw-bold hover-color-b" aria-current="page" href="#"><i class="fa fa-bars pe-2"></i> Categories </a>
                             </li>
-                            <li class="nav-item"><a class="nav-link p-0 color-black hover-color-a" href="#">Deals</a></li>
-                            <li class="nav-item"><a class="nav-link p-0 color-black hover-color-a" href="#">Whats a New</a></li>
+                            <li class="nav-item"><a class="nav-link p-0 color-black hover-color-b" href="#">Deals</a></li>
+                            <li class="nav-item"><a class="nav-link p-0 color-black hover-color-b" href="#">Whats a New</a></li>
                         </ul>
                     </div>
 
-                    <div class="header-contact d-flex align-items-center">
-                        <img src="./assets/img/header-contact.png" class="me-3" width="40px" alt="Contact Icon">
-                        <div>
-                            <span class="color-para-light op-p-8">Need help?</span>
-                            <h5 class="fw-bold color-a">Call us: +1800900 2452</h5>
+                    <div class="header-search">
+
+                        <input type="text" class="ps-3 border-b ease-tran font-14 w-100 hover-border-a rounded-pill b-1" placeholder="Search for products, brand and more...">
+                        
+                    </div>
+
+                    <div class="header-top-right d-flex gap-4 align-items-center">
+                        <span class="me-1 position-relative cursor-pointer">
+                            <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">0</span>
+                            <img src="./assets/img/icons/heart.svg" alt="Heart Icon">
+                        </span>
+                        <span class="me-1 position-relative cursor-pointer">
+                            <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">3</span>
+                            <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
+                        </span>
+                        <div class="d-flex align-items-center cursor-pointer  group-hover-header">
+                            <img src="./assets/img/icons/user.svg" alt="Heart Icon">
+                            <span class="ms-2 hover">
+                                <span class="color-para-light">My Account</span>
+                                <p class="color-black fw-bold mb-0 ease-tran">Login</p>
+                            </span>
                         </div>
                     </div>
+                    
 
                 </nav>
             </div>

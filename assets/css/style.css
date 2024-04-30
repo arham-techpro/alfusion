@@ -105,13 +105,18 @@ Reusable Components
 .bg-para-light,.hover-bg-para-light:hover{
     background: var(--color-para-light);
 }
-
+.bg-tran{
+    background: transparent;
+}
 
 .b-2{
     border: 2px solid;
 }
 .border-a{
-    border-color: var(--color-a) !important;
+    border-color: var(--color-a)  !important;
+}
+.border-b{
+    border-color: var(--color-b) !important;
 }
 
 
@@ -246,22 +251,41 @@ Fonts Sizes and Specing
 /* ======================================
 Header
 ====================================== */
+
+nav.navbar.navbar-expand-lg.py-0.justify-content-between {
+    column-gap: 63px;
+}
+.b-1{
+    border: 1px solid;
+}
 .header{
     position: sticky;
     width: 100%;
     z-index: 99999;
     background: var(--color-white-main);
-    top: -94px;
+    top: -37px;
 }
-
+.header select option{
+    background: var(--color-b);
+    cursor: pointer;
+}
+.group-hover-header:hover p{
+    color: var(--color-b);
+}
+.header select:focus{
+    outline: 0;
+}
 .logo{
     width: 140px;
 }
 .header-search{
-    width: 750px;
+    width: 380px;
 }
-.header-search .button{
-    width: 165px;
+.header-search input{
+    height: 50px;
+}
+.hover-border-a:hover{
+    border-color: var(--color-a) !important;
 }
 .pro-number{
     top: -7px;
@@ -277,8 +301,11 @@ Header
 }
 
 .header-bottom{
-    padding-bottom: 12px;
+    padding: 25px 0px;
     border-bottom: 1px solid #EFEFEF;
+}
+.custom-nav .nav-item{
+    font-size: 14px;
 }
 .custom-nav .nav-item:not(:last-child){
     margin-right: 32px;
