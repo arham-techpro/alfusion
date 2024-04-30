@@ -52,4 +52,16 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
     });
+
+
+    // Woman Fashion Slider
+    $('.trending-now-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows:false,
+        dots:false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 });

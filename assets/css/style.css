@@ -154,6 +154,12 @@ Reusable Components
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.57, -0.24)
     /* transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); */
 }
+.hover-bg-a-before::before{
+    background: var(--color-a);
+}
+.hover-bg-b-before::before{
+    background: var(--color-b);
+}
 .hover-bg-black-before::before{
     background: var(--color-black-main);
 }
@@ -192,6 +198,9 @@ Fonts Sizes and Specing
 }
 .font-20{
     font-size: 20px;
+}
+.font-14{
+    font-size: 14px;
 }
 
 /* gaps */
@@ -246,7 +255,7 @@ Header
 }
 
 .logo{
-    width: 125px;
+    width: 140px;
 }
 .header-search{
     width: 750px;
@@ -281,13 +290,9 @@ Header
 Banner
 ====================================== */
 .single-banner{
-    display: flex;
-    align-items: center;
-    padding: 60px;
+    height: 420px;
 }
-.single-banner h2{
-    letter-spacing: 1.12px;
-}
+
 
 /* ======================================
 Category Slider
@@ -309,12 +314,12 @@ Category Slider
 Featured Image Box
 ====================================== */
 .featured-image-box{
-    height: 310px;
-    padding: 30px;
+    height: 418px;
 }
-.single-featured-images:last-child .row{
-    flex-direction: row-reverse;
+.featured-image-box.mini{
+    height: 197px;
 }
+
 
 /* ======================================
 Single Prodct Box
@@ -328,6 +333,7 @@ Single Prodct Box
     font-family: "Open Sans", sans-serif;
     cursor: pointer;
     border: 1px solid #FAFAFA;
+    overflow: hidden;
 }
 .offer-badge{
     left: 12px;
@@ -341,11 +347,10 @@ Single Prodct Box
     height: 240px;
     width: 100%;
     position: absolute;
-    left: 0;
+    right: -150%;
     top: 0;
-    transform: scaleY(0);
     transition: .3s ease;
-    transform-origin: bottom;
+    /* transition-timing-function: cubic-bezier(0.52, 1.64, 0.57, -0.24); */
 }
 .add-tocart-btn .button{
     font-size: 14px;
@@ -355,7 +360,7 @@ Single Prodct Box
     border-color: var(--color-c);
 }
 .single-product-box:hover .product-overly{
-    transform: scaleY(1);
+    right: 0px;
     
 }
 .single-product-image{
@@ -389,6 +394,35 @@ Single Prodct Box
 
 
 
+/* ======================================
+Footer
+====================================== */
+.trending-now-slider .slick-slide{
+    margin: 0px 15px;
+}
+.tending-box img{
+    height: 296px;
+    object-fit: cover;
+}
+.tending-box-content .button{
+    background: #BF4126;
+}
+
+.brand-box img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+.brand-box {
+    padding: 12px;
+    background: #F6F6F6;
+    border:1px solid #F6F6F6;
+}
+.brand-box:hover{
+    transform: translateY(-5px);
+    border-color: #B0B0B0;
+    box-shadow: 0px 4px 14px -12px #333333;
+}
 /* ======================================
 Footer
 ====================================== */
