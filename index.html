@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/lib/slick/slick/slick-theme.css">
 
     <!-- Custom -->
-    <link rel="stylesheet" href="./assets/css/style.css?v2">
+    <link rel="stylesheet" href="./assets/css/style.css?v3">
 
 
 
@@ -344,24 +344,24 @@
                 <div class="single-featured-images">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="featured-image-box rounded-4" style="background: url('./assets/img/today-product-1.jpg') center /cover no-repeat;"></div>
+                            <div class="featured-image-box rounded-4 card-animation" style="background: url('./assets/img/today-product-1.jpg') center /cover no-repeat;"></div>
                         </div>
                         <div class="col-lg-6">
                             <div class="row gap-y-24">
                                 <div class="col-md-6">
-                                    <div class="featured-image-box rounded-4 mini d-flex align-items-end" style="background: url('./assets/img/today-product-2.jpg') center /cover no-repeat;">
+                                    <div class="featured-image-box card-animation rounded-4 mini d-flex align-items-end" style="background: url('./assets/img/today-product-2.jpg') center /cover no-repeat;">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="featured-image-box rounded-4 mini d-flex align-items-end" style="background: url('./assets/img/today-product-3.jpg') center /cover no-repeat;">
+                                    <div class="featured-image-box card-animation rounded-4 mini d-flex align-items-end" style="background: url('./assets/img/today-product-3.jpg') center /cover no-repeat;">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="featured-image-box rounded-4 mini d-flex align-items-end" style="background: url('./assets/img/today-product-4.jpg') center /cover no-repeat;">
+                                    <div class="featured-image-box card-animation rounded-4 mini d-flex align-items-end" style="background: url('./assets/img/today-product-4.jpg') center /cover no-repeat;">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="featured-image-box rounded-4 mini d-flex align-items-end" style="background: url('./assets/img/today-product-5.jpg') center /cover no-repeat;">
+                                    <div class="featured-image-box card-animation rounded-4 mini d-flex align-items-end" style="background: url('./assets/img/today-product-5.jpg') center /cover no-repeat;">
                                     </div>
                                 </div>
                             </div>
@@ -665,7 +665,7 @@
     <!-- ======================================
      Best Deals Products
     ====================================== -->
-    <section class="category-section">
+    <section class="category-section pb-80">
         <div class="container">
             <div class="mb-32 d-flex justify-content-between">
                 <h3 class="sec-title color-black mb-0">Todays Best Deals For You!</h3>
@@ -901,26 +901,18 @@
 
     </section>
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- ======================================
+     Offer Image Section
+    ====================================== -->
+    <section>
+        <img src="./assets/img/offer-section.jpg" alt="Offer Image Section" class="w-100">
+    </section>
 
 
     <!-- ======================================
     Woman Fashion Section
     ====================================== -->
-    <!-- <section class="category-section pt-80">
+    <section class="category-section pt-80">
         <div class="container">
             <div class="mb-22 d-flex justify-content-between">
                 <h3 class="sec-title color-black mb-0">Women's Fashion</h3>
@@ -933,1055 +925,122 @@
 
             <div class="woman-fashion-slider">
 
+
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-
-                    
-
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
                     <div class="single-product-image mb-2">
                         <img src="./assets/img/product-images/woman-1.jpg" class="w-100" alt="Featured Product Image">
                     </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Cotton Printed Exclusive Unstitched Salwar Kam..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
                             <small class="color-para-light">(220)</small>
                         </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>350</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>405</span>
-                        </div>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
                     </div>
                 </div>
 
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
                     <div class="single-product-image mb-2">
                         <img src="./assets/img/product-images/woman-2.jpg" class="w-100" alt="Featured Product Image">
                     </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Silk Satin Stylish Sleepwear Comfortable..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
                             <small class="color-para-light">(220)</small>
                         </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
                     </div>
                 </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
 
-                    
-    
+                <div class="single-product-box position-relative overflow-hidden rounded-4">
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
                     <div class="single-product-image mb-2">
                         <img src="./assets/img/product-images/woman-3.jpg" class="w-100" alt="Featured Product Image">
                     </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Cotton Skin Print Readymade Salwar Kam..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
                             <small class="color-para-light">(220)</small>
                         </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
                     </div>
                 </div>
-                
+
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-                    
-    
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
                     <div class="single-product-image mb-2">
                         <img src="./assets/img/product-images/woman-4.jpg" class="w-100" alt="Featured Product Image">
                     </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Mesh Cotton Premium Quality Sharee for Wom.. </h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
                             <small class="color-para-light">(220)</small>
                         </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>6,912</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>7,500</span>
-                        </div>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
                     </div>
                 </div>
-                
+
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
                     <div class="single-product-image mb-2">
                         <img src="./assets/img/product-images/woman-5.jpg" class="w-100" alt="Featured Product Image">
                     </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">AC Cotton Indian Premium Loan Digital P</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
                             <small class="color-para-light">(220)</small>
                         </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>789</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-
-                    
-
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-1.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Cotton Printed Exclusive Unstitched Salwar Kam..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>350</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>405</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-2.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Silk Satin Stylish Sleepwear Comfortable..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
                     </div>
                 </div>
                 
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-3.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Cotton Skin Print Readymade Salwar Kam..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-4.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Mesh Cotton Premium Quality Sharee for Wom.. </h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>6,912</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>7,500</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-5.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">AC Cotton Indian Premium Loan Digital P</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>789</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
-
-
-        </div>
-
-    </section> -->
-
-
-    <!-- ======================================
-    Man Fashion Section
-    ====================================== -->
-    <!-- <section class="category-section pt-60">
-        <div class="container">
-            <div class="mb-22 d-flex justify-content-between">
-                <h3 class="sec-title color-black mb-0">Men's Fashion</h3>
-                <a href="#" class="color-b link-button-b ease-tran">View all <i class="ms-2 fa fa-arrow-right color-black ease-tran"></i></a>
-            </div>
-        </div>
-
-
-        <div class="container">
-
-            <div class="man-fashion no-slider d-flex flex-wrap">
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-1.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">SSB Leather Premium Handmade Belt for Men..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">SSB Leather Premium Pati Tassel Shoe for Me..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>6,912</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>7,500</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-
-                    
-
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-3.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Bangladesh ODI Cricket Official Jersey 2022</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>350</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>405</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-4.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Ayatul Kurshi Wrist Watch - Golden</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>789</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-5.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">SSB Leather Budget King Stiff Belt for Men</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
-                    </div>
-                </div>
-                
-                
-
-                
-                
-                
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-
-                    
-
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-6.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Solid Polo | White</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>350</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>405</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-7.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Solid Joggers | Admiral Blue</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-8.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Cargo Pant | GOLD</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-9.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Round Neck Forest Green Full Sleeve</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>6,912</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>7,500</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-10.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Round Neck Red Half Sleeve</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>789</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                
-            </div>
-
-
-        </div>
-
-    </section> -->
-
-
-    <!-- ======================================
-    Trending Product Section
-    ====================================== -->
-    <!-- <section class="offer-image pt-80">
-        <div class="container">
-            <div class="mb-22 d-flex justify-content-between">
-                <h3 class="sec-title color-black mb-0">Trending products For You </h3>
-            </div>
-        </div>
-        <div class="slider-container">
-            <div class="trending-now-slider">
-
-                <div class="tending-box" style="background: #E6F1F8;">
-                    <img src="./assets/img/trending-1.jpg" class="w-100" alt="Trending Image">
-                    <div class="tending-box-content p-4 d-flex flex-column row-gap-2 align-items-start">
-                        <h4 class="fs-4 fw-bold color-black mb-0">Woman Fashion world</h4>
-                        <span class="color-para-light">Today 20% off</span>
-                        <button class="button sm-button rounded-3 mt-1 d-inline border-0  d-inline hover-color-white color-white fw-semibold hover-bg-b-before rounded-0 overflow-hidden">Shop Now</button>
-                    </div>
-                </div>
-                <div class="tending-box" style="background: #FFEEEB;">
-                    <img src="./assets/img/trending-2.jpg" class="w-100" alt="Trending Image">
-                    <div class="tending-box-content p-4 d-flex flex-column row-gap-2 align-items-start">
-                        <h4 class="fs-4 fw-bold color-black mb-0">Fashion world</h4>
-                        <span class="color-para-light">Today 20% off</span>
-                        <button class="button sm-button rounded-3 mt-1 d-inline border-0  d-inline hover-color-white color-white fw-semibold hover-bg-b-before rounded-0 overflow-hidden">Shop Now</button>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section> -->
-
-
-    <!-- ======================================
-    Recomamded For You Section
-    ====================================== -->
-    <section class="category-section pt-60">
-        <div class="container">
-            <div class="mb-22 d-flex justify-content-between">
-                <h3 class="sec-title color-black mb-0">Recommended for you</h3>
-            </div>
-        </div>
-
-
-        <div class="container">
-
-            <div class="man-fashion no-slider d-flex flex-wrap">
-
-                <!-- row 1 -->
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-
-                    
-
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-6.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Solid Polo | White</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>350</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>405</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-7.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Solid Joggers | Admiral Blue</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-8.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Cargo Pant | GOLD</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-9.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Round Neck Forest Green Full Sleeve</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>6,912</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>7,500</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-10.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Round Neck Red Half Sleeve</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>789</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- row 2 -->
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-
-                    
-
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/kids-1.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Jincaizi Large Capacity School Backpack - Black</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/kids-2.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Nylon Cartoon Backpacks for Kids</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/kids-3.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Espiral Super Light weight Baby School Bag</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/kids-2.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Nylon Cartoon Backpacks for Kids</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/kids-3.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Espiral Super Light weight Baby School Bag</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- row 3 -->
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-
-                    
-
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-1.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Cotton Printed Exclusive Unstitched Salwar Kam..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>350</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>405</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-2.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Silk Satin Stylish Sleepwear Comfortable..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-3.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Cotton Skin Print Readymade Salwar Kam..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-4.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Mesh Cotton Premium Quality Sharee for Wom.. </h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>6,912</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>7,500</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/woman-5.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">AC Cotton Indian Premium Loan Digital P</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>789</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- row 4 -->
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-1.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">SSB Leather Premium Handmade Belt for Men..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>1600</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>1950</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">SSB Leather Premium Pati Tassel Shoe for Me..</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>6,912</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>7,500</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-
-                    
-
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-3.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Bangladesh ODI Cricket Official Jersey 2022</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>350</p>
-                            <span class="pricing-del position-relative color-para-light color-c fw-normal mb-0 d-inline"><sup class="">৳</sup>405</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-4.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">Ayatul Kurshi Wrist Watch - Golden</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>789</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-product-box position-relative overflow-hidden rounded-4">
-
-                    
-    
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-5.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail p-20 pt-0">
-                        <h4 class="color-black fw-semibold fs-6">SSB Leather Budget King Stiff Belt for Men</h4>
-                        <span class="ratings">
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <i class="fa fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <div class="mt-3">
-                            <p class="d-inline me-2 color-black fs-3 fw-semibold mb-0"><sup class="color-para-light fw-normal fs-5">৳</sup>650</p>
-                        </div>
-                    </div>
-                </div>
-     
             </div>
 
 
@@ -1990,24 +1049,631 @@
     </section>
 
 
-    <footer class="main-footer pt-60 ">
+    <!-- ======================================
+    Man Fashion Section
+    ====================================== -->
+    <section class="category-section pt-60">
+        <div class="container">
+            <div class="mb-32 d-flex justify-content-between">
+                <h3 class="sec-title color-black mb-0">Men's Fashion</h3>
+                <a href="#" class="color-b link-button-b ease-tran">View all <i class="ms-2 fa fa-arrow-right color-black ease-tran"></i></a>
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <div class="row gap-y-24">
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-1.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-3.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-5.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-6.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-7.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-8.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-9.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- ======================================
+    Recomamded For You Section
+    ====================================== -->
+    <section class="category-section pt-60">
+        <div class="container">
+            <div class="mb-22 d-flex justify-content-between">
+                <h3 class="sec-title color-black mb-0">Most Selling Products</h3>
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <div class="row gap-y-24">
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-10.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-7.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-9.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/woman-1.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/woman-3.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/woman-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/kids-1.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/kids-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+    Trending Product Section
+    ====================================== -->
+    <section class="offer-image pt-80">
+        <div class="container">
+            <div class="mb-22 d-flex justify-content-between">
+                <h3 class="sec-title color-black mb-0">Trending products For You </h3>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="trending-now-slider">
+
+                <div class="tending-box rounded-4 overflow-hidden" style="background: #E6F1F8;">
+                    <img src="./assets/img/trending-1.jpg" class="w-100" alt="Trending Image">
+                    <div class="tending-box-content p-4 d-flex flex-column row-gap-2 align-items-start">
+                        <h4 class="fs-4 fw-bold color-black mb-0">Woman Fashion world</h4>
+                        <span class="color-para-light">Today 20% off</span>
+                        <button class="button sm-button rounded-pill mt-1 border-0 color-white fw-semibold hover-bg-b">Shop Now</button>
+                    </div>
+                </div>
+                <div class="tending-box rounded-4 overflow-hidden" style="background: #FFEEEB;">
+                    <img src="./assets/img/trending-2.jpg" class="w-100" alt="Trending Image">
+                    <div class="tending-box-content p-4 d-flex flex-column row-gap-2 align-items-start">
+                        <h4 class="fs-4 fw-bold color-black mb-0">Fashion world</h4>
+                        <span class="color-para-light">Today 20% off</span>
+                        <button class="button sm-button rounded-pill mt-1 border-0 color-white fw-semibold hover-bg-b">Shop Now</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ======================================
+     Best Deals Products
+    ====================================== -->
+    <section class="category-section pt-80">
+        <div class="container">
+            <div class="mb-32 d-flex justify-content-between">
+                <h3 class="sec-title color-black mb-0">Best Selling Store</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="store-box card-animation rounded-4">
+                        <img src="./assets/img/store-1.jpg" alt="Store Image" class="cover-image main-image w-100 rounded-4">
+                        <div class="store-box-info p-20 position-relative">
+                            <div class="store-logo rounded-circle overflow-hidden p-2 bg-white-main position-absolute">
+                                <img src="./assets/img/brand-images/bevmo.jpg" alt="Store Image" class="w-100 cover-image">
+                            </div>
+                            <p class="fs-5 fw-semibold color-black mb-0 pb-0">Bevmo</p>
+                            <ul class="store-category color-para-light d-flex column-gap-2 align-items-center ps-0 mb-2 py-1">
+                                <li>Bag</li>
+                                <li class="d-flex align-items-center"><i class="fa fa-circle" style="font-size: 6px;" height="6px"></i></li>
+                                <li>Perfume</li>
+                            </ul>
+                            <a href="#" class="d-flex column-gap-2 align-items-center color-b hover-color-black"><i class="fa fa-tag fs-5" style="transform:rotateY(180deg) ;"></i><span class="font-14">Delivery with in 24 hours</span> </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3">
+                    <div class="store-box card-animation rounded-4">
+                        <img src="./assets/img/store-2.jpg" alt="Store Image" class="cover-image main-image w-100 rounded-4">
+                        <div class="store-box-info p-20 position-relative">
+                            <div class="store-logo rounded-circle overflow-hidden p-2 bg-white-main position-absolute">
+                                <img src="./assets/img/brand-images/adyan.jpg" alt="Store Image" class="w-100 cover-image">
+                            </div>
+                            <p class="fs-5 fw-semibold color-black mb-0 pb-0">Bevmo</p>
+                            <ul class="store-category color-para-light d-flex column-gap-2 align-items-center ps-0 mb-2 py-1">
+                                <li>Adyan</li>
+                                <li class="d-flex align-items-center"><i class="fa fa-circle" style="font-size: 6px;" height="6px"></i></li>
+                                <li>Perfume</li>
+                            </ul>
+                            <a href="#" class="d-flex column-gap-2 align-items-center color-b hover-color-black"><i class="fa fa-tag fs-5" style="transform:rotateY(180deg) ;"></i><span class="font-14">Delivery with in 24 hours</span> </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3">
+                    <div class="store-box card-animation rounded-4">
+                        <img src="./assets/img/store-3.jpg" alt="Store Image" class="cover-image main-image w-100 rounded-4">
+                        <div class="store-box-info p-20 position-relative">
+                            <div class="store-logo rounded-circle overflow-hidden p-2 bg-white-main position-absolute">
+                                <img src="./assets/img/brand-images/start-tech.jpg" alt="Store Image" class="w-100 cover-image">
+                            </div>
+                            <p class="fs-5 fw-semibold color-black mb-0 pb-0">Star Tech</p>
+                            <ul class="store-category color-para-light d-flex column-gap-2 align-items-center ps-0 mb-2 py-1">
+                                <li>Adyan</li>
+                                <li class="d-flex align-items-center"><i class="fa fa-circle" style="font-size: 6px;" height="6px"></i></li>
+                                <li>Perfume</li>
+                            </ul>
+                            <a href="#" class="d-flex column-gap-2 align-items-center color-b hover-color-black"><i class="fa fa-tag fs-5" style="transform:rotateY(180deg) ;"></i><span class="font-14">Delivery with in 24 hours</span> </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3">
+                    <div class="store-box card-animation rounded-4">
+                        <img src="./assets/img/store-4.jpg" alt="Store Image" class="cover-image main-image w-100 rounded-4">
+                        <div class="store-box-info p-20 position-relative">
+                            <div class="store-logo rounded-circle overflow-hidden p-2 bg-white-main position-absolute">
+                                <img src="./assets/img/brand-images/bevmo.jpg" alt="Store Image" class="w-100 cover-image">
+                            </div>
+                            <p class="fs-5 fw-semibold color-black mb-0 pb-0">Bevmo</p>
+                            <ul class="store-category color-para-light d-flex column-gap-2 align-items-center ps-0 mb-2 py-1">
+                                <li>Adyan</li>
+                                <li class="d-flex align-items-center"><i class="fa fa-circle" style="font-size: 6px;" height="6px"></i></li>
+                                <li>Perfume</li>
+                            </ul>
+                            <a href="#" class="d-flex column-gap-2 align-items-center color-b hover-color-black"><i class="fa fa-tag fs-5" style="transform:rotateY(180deg) ;"></i><span class="font-14">Delivery with in 24 hours</span> </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+         
+            
+
+        </div>
+
+
+
+    </section>
+    
+
+    <!-- ======================================
+        News Section
+    ====================================== -->
+    <div class="news-section pt-80">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="footer-box color-para-dark">
-                        <img src="./assets/img/logo.png" class="logo">
-                        <h4 class="fw-bold fs-3 my-3 color-para-dark op-p-8">Hot Line: 09638-005800</h4>
-                        <p class="color-para-dark">Mobile: 017311-62546 <b>(10am- 10pm)</b></p>
-                        <div>
-                            <span class="fw-bold">Corporate Office:</span>
-                            <p class="mt-1 mb-4">10/2, Gawsia Kashem Tower, 3rd Floor, <br> Banosree, Dhaka</p>
+                <div class="col-lg-4">
+                    <div class="news-box card-animation rounded-4 overflow-hidden d-flex align-items-center">
+                        <img src="./assets/img/news-1.jpg" alt="News Cover">
+                        <div class="news-info p-24-30">
+                            <p class="font-20 color-black fw-semibold mb-2">Frequently Asked Questions</p>
+                            <p class="mb-0 color-para-dark">Updates on safe Shopping in our Stores</p>
                         </div>
-                        <ul class="ps-0 d-flex column-gap-3 footer-social-box mb-4">
-                            <li><a href="#" class="center-element rounded-pill bg-tran color-black hover-bg-a ease-tran hover-color-white fs-5"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="center-element rounded-pill bg-tran color-black hover-bg-a ease-tran hover-color-white fs-5"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="center-element rounded-pill bg-tran color-black hover-bg-a ease-tran hover-color-white fs-5"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" class="center-element rounded-pill bg-tran color-black hover-bg-a ease-tran hover-color-white fs-5"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-box card-animation rounded-4 overflow-hidden d-flex align-items-center">
+                        <img src="./assets/img/news-2.jpg" alt="News Cover">
+                        <div class="news-info p-24-30">
+                            <p class="font-20 color-black fw-semibold mb-2">Online Payment Process</p>
+                            <p class="mb-0 color-para-dark">Updates on safe Shopping in our Stores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-box card-animation rounded-4 overflow-hidden d-flex align-items-center">
+                        <img src="./assets/img/news-3.jpg" alt="News Cover">
+                        <div class="news-info p-24-30">
+                            <p class="font-20 color-black fw-semibold mb-2">Home Delivery Option</p>
+                            <p class="mb-0 color-para-dark">Updates on safe Shopping in our Stores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================
+        Today Product
+    ====================================== -->
+    <footer class="main-footer pt-60 ">
+        <div class="container">
+            <div class="row justify-content-between pb-60">
+                <div class="col-lg-4">
+                    <div class="footer-box color-para-dark">
+                        <img src="./assets/img/logo.png" class="logo mb-4">
+                        <p class="color-para-dark mb-4">Amet minim mollit non deserunt ullamco est <br> sit aliqua dolor do amet sint. Velit official <br> consequat duis enim velit mollit.</p>
+                        <p class="color-black fw-semibold mb-4 font-20">Payment method:</p>
+                        <img src="./assets/img/paymethod.png" alt="paymethod Image" width="210px">
                     </div>
                 </div>
 
@@ -2017,11 +1683,11 @@
                             <div class="footer-box color-para-dark" >
                                 <p class="fw-semibold">Top categories</p>
                                 <ul class="footer-menu pt-2 mb-0 ps-0 row-gap-3 d-flex flex-column">
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Men’s fashion</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Woman items</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Kid’s items</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Accessories</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Cosmetics</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Men’s fashion</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Woman items</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Kid’s items</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Accessories</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Cosmetics</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -2029,12 +1695,12 @@
                             <div class="footer-box color-para-dark ps-3" >
                                 <p class="fw-semibold">Services</p>
                                 <ul class="footer-menu pt-2 mb-0 ps-0 row-gap-3 d-flex flex-column">
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Terms & conditions</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Shipping & delivery</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Refund & return policy</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Privacy policy</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Order tracking</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">FAQ</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Terms & conditions</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Shipping & delivery</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Refund & return policy</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Privacy policy</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Order tracking</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">FAQ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -2042,26 +1708,29 @@
                             <div class="footer-box color-para-dark" >
                                 <p class="fw-semibold">About us</p>
                                 <ul class="footer-menu pt-2 mb-0 ps-0 row-gap-3 d-flex flex-column">
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">News & Blog</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">My Wishlist</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Shop by location</a></li>
-                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-a">Contact Us</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">News & Blog</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">My Wishlist</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Shop by location</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+            </div>
 
-                <div class="col-lg-12">
-                    <div class="footer-copyright pt-3 border-top d-flex justify-content-between align-items-center pb-4">
-                        <span>© 2024 Shop, All Rights Reserved</span>
-                        <div class="pb-4">
-                            <span class="font-20 fw-semibold">Payment method:</span>
-                            <img src="./assets/img/paymethod.png" class="ms-3" alt="Payment Mwthod" >
-                        </div>
-                    </div>
+        </div>
+        <div class="footer-copyright pt-4 border-top  pb-4">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center pb-2">
+                    <span class="d-flex align-items-center column-gap-1">
+                        <img src="./assets/img/icons/shop-icon.svg" alt="Shop Icon">
+                        <a href="#" class="color-para-light hover-color-b">Become Seller</a>
+                    </span>
+                    <span>© 2024 Alfusion, All Rights Reserved</span>
+                    
                 </div>
-
             </div>
         </div>
     </footer>

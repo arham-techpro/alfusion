@@ -54,7 +54,7 @@ $(document).ready(function(){
     $('.woman-fashion-slider').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         arrows:false,
         dots:false,
         autoplay: true,
