@@ -40,7 +40,7 @@ ul{
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--color-a);
+    background: var(--color-b);
   }
   
   /* Handle on hover */
@@ -286,7 +286,7 @@ nav.navbar.navbar-expand-lg.py-0.justify-content-between {
     transform: translateY(-50%);
 }
 .hover-border-a:hover{
-    border-color: var(--color-a) !important;
+    border-color: var(--color-b) !important;
 }
 .pro-number{
     top: -7px;
