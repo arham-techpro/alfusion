@@ -56,7 +56,10 @@ ul{
 .slider-container{
     width: 1304px;
     margin: auto;
-    padding: 1px 10px;
+    padding: 0px 10px;
+}
+.slick-track{
+    padding-top: 20px;
 }
 input:focus{
     outline: none;
@@ -113,12 +116,17 @@ Reusable Components
     border: 2px solid;
 }
 .border-a{
-    border-color: var(--color-a)  !important;
+    border-color: var(--color-a);
 }
-.border-b{
-    border-color: var(--color-b) !important;
+.border-b-1{
+    border: 1px solid var(--color-b);
 }
-
+.border-gray-1{
+    border: 1px solid #A3A9C2;
+}
+.text-srink{
+    letter-spacing: -.3px;
+}
 
 
 .ease-tran{
@@ -129,7 +137,7 @@ Reusable Components
 }
 
 .button{
-    display: inline-block;
+    display: inline-flex;
     position: relative;
     z-index: 1;
     transition: .5s ease;
@@ -144,36 +152,11 @@ Reusable Components
     height: 36px;
     width: 36px;
 }
-.button::before{
-    content: '';
-    height: 105%;
-    width: 100%;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: .5s ease;
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.57, -0.24)
-    /* transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); */
-}
-.hover-bg-a-before::before{
-    background: var(--color-a);
-}
-.hover-bg-b-before::before{
+.category-button-active{
     background: var(--color-b);
+    color: var(--color-white-main);
 }
-.hover-bg-black-before::before{
-    background: var(--color-black-main);
-}
-.hover-bg-white-before::before{
-    background: var(--color-white-main);
-}
-.button:hover:before{
-    transform: scaleX(1);
-}
+
 .link-button-b:hover{
     color: var(--color-black-main);
 }
@@ -195,6 +178,10 @@ Reusable Components
     font-weight: 500;
 }
 
+.currency-icon-sm{
+    width: 13px;
+    height: 17px;
+}
 /* ======================================
 Fonts Sizes and Specing
 ====================================== */
@@ -214,6 +201,9 @@ Fonts Sizes and Specing
 }
 /* Margins */
 
+.mb-22{
+    margin-bottom: 22px;
+}
 .mb-32{
     margin-bottom: 32px;
 }
@@ -344,6 +334,7 @@ Category Slider
 /* ======================================
 Featured Image Box
 ====================================== */
+
 .featured-image-box{
     height: 418px;
 }
@@ -355,16 +346,22 @@ Featured Image Box
 /* ======================================
 Single Prodct Box
 ====================================== */
-.featured-product-slider .slick-slide , .woman-fashion-slider .slick-slide,.kids-item-slider .slick-slide{
+.featured-product-slider .slick-slide , .woman-fashion-slider .slick-slide,.weekly-populer-slider .slick-slide{
     margin: 0px 10px;
 }
 /* ------------------------------------------------- */
 .single-product-box {
     background: #FAFAFA;
+    border: 1px solid #FAFAFA;
     font-family: "Open Sans", sans-serif;
     cursor: pointer;
-    border: 1px solid #FAFAFA;
     overflow: hidden;
+    transition: .3s ease;
+}
+.favourite{
+    top: 10px;
+    background: #F5F5F5;
+    right: 10px;
 }
 .offer-badge{
     left: 12px;
@@ -372,23 +369,19 @@ Single Prodct Box
     z-index: 99;
     font-weight: 500;
 }
-.product-overly{
-    background: rgba(0, 0, 0, 20%);
-    padding: 12px;
-    height: 240px;
-    width: 100%;
-    position: absolute;
-    right: -150%;
-    top: 0;
-    transition: .3s ease;
-    /* transition-timing-function: cubic-bezier(0.52, 1.64, 0.57, -0.24); */
-}
+
 .add-tocart-btn .button{
     font-size: 14px;
     padding: 8px 16px;
 }
-.single-product-box:hover{
-    border-color: var(--color-c);
+.card-animation{
+    cursor: pointer;
+    transition: .3s ease;
+}
+.single-product-box:hover , .card-animation:hover{
+    transform: translateY(-7px);
+    border-color: #B0B0B0;
+    box-shadow: 0px 4px 14px -12px #333333;
 }
 .single-product-box:hover .product-overly{
     right: 0px;
@@ -403,8 +396,8 @@ Single Prodct Box
     object-fit: cover;
 
 }
-.product-detail h4 {
-    height: 40px;
+.product-card-price{
+    margin-top: -5px;
 }
 .pricing-del::before{
     content: '';

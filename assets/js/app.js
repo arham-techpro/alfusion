@@ -1,4 +1,23 @@
 $(document).ready(function(){
+
+
+    $('.category-btn').click(function(){
+        $('.category-btn').removeClass('category-button-active');
+        $(this).addClass('category-button-active');
+        $(".loading-text").removeClass('d-none');
+        $(".custom-tab-content .custom-tab-item").empty();
+        
+        var page_name = $(this).data("tab-target");
+        var full_page_name = "components/"+page_name+".html";
+        $(".custom-tab-content .custom-tab-item").load(full_page_name,function(){
+            $(".loading-text").addClass('d-none');
+        });
+    });
+});
+
+
+$(document).ready(function(){
+
     $('.banner-slider-container').slick({
         infinite: true,
         slidesToShow: 1,
@@ -23,8 +42,8 @@ $(document).ready(function(){
     // Featured Product Slider
     $('.featured-product-slider').slick({
         infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 2,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         arrows:false,
         dots:false,
         autoplay: true,
@@ -34,7 +53,7 @@ $(document).ready(function(){
     // Woman Fashion Slider
     $('.woman-fashion-slider').slick({
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 2,
         arrows:false,
         dots:false,
@@ -43,10 +62,10 @@ $(document).ready(function(){
     });
     
     // Woman Fashion Slider
-    $('.kids-item-slider').slick({
+    $('.weekly-populer-slider').slick({
         infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 2,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         arrows:false,
         dots:false,
         autoplay: true,
