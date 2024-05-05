@@ -25,6 +25,7 @@ ul{
     --color-b:#0077B6;
     --color-c:#FF5733;
     --color-white-main:#fff;
+    --color-gray:#EBEDEC;
     --color-black-main:#131921;
     --color-para-light:#61656A;
     --color-para-dark:#333;
@@ -36,14 +37,14 @@ ul{
 /* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--color-b);
-  }
-  
-  /* Handle on hover */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-b);
+}
+
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-c);
   }
@@ -106,6 +107,9 @@ Reusable Components
 .bg-white-main,.hover-bg-white-main:hover{
     background: var(--color-white-main);
 }
+.bg-grey,.hover-bg-grey:hover{
+    background: var(--color-gray);
+}
 .bg-black-main,.hover-bg-black-main:hover{
     background: var(--color-black-main);
 }
@@ -155,6 +159,10 @@ Reusable Components
 .squire-sm-button{
     height: 36px;
     width: 36px;
+}
+.squire-md-button{
+    height: 40px;
+    width: 40px;
 }
 .category-button-active{
     background: var(--color-b);
@@ -521,6 +529,53 @@ Brand  css
     border-color: #B0B0B0;
     box-shadow: 0px 4px 14px -12px #333333;
 }
+
+/* ======================================
+Single Shop Category
+====================================== */
+.shop-category-banner{
+    height: 320px;
+}
+.custom-select{
+    display: inline-block;
+}
+.custom-select::before{
+    font-family:  "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    z-index: 99;
+}
+.custom-select select.sm-button{
+    appearance: none;
+    padding-right: 34px;
+}
+.custom-pagination .page-link{
+    color: #667085;
+    font-weight: 600;
+}
+.custom-pagination .page-link:focus{
+    box-shadow: none;
+}
+.custom-pagination .page-item.active .page-link,.custom-pagination .page-link:hover{
+    background-color: var(--color-b);
+    color: var(--color-white-main);
+}
+.disabled>.page-link, .page-link.disabled{
+    color: var(--color-black-main);
+    background: transparent;
+}
+
+
+
+
+
+
+
+
 /* ======================================
 Footer
 ====================================== */
@@ -542,3 +597,4 @@ Footer
 .footer-social-box li a:hover{
     border-color: var(--color-a);
 }
+

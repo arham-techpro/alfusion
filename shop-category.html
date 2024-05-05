@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
+    <title>Alfusion - Shop Category</title>
+    
+    <!-- Library CSS -->
+    <script src="https://kit.fontawesome.com/5c1a266e25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="./assets/lib/slick/slick/slick.css">
+    <link rel="stylesheet" href="./assets/lib/slick/slick/slick-theme.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./assets/css/style.css?v4">
+
+
+
+</head>
+<body>
+    
+
+    <!-- ======================================
+    Header Section
+    ====================================== -->
+    <header class="header">
+        <div class="header-top py-2 bg-b">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center font-14 color-white">
+                    <span><img src="./assets/img/icons/phone.svg" alt="Phone Icon"> +8801236562566</span>
+                    <span>Get 50% off on selected items <span class="mx-4"> | </span> <a href="#" class="color-white hover-color-black"><u>Shop Now</u></a></span>
+                    <span>
+                        <select name="#" id="#" class="border-0 bg-tran color-white cursor-pointer">
+                            <option value="#">Eng</option>
+                            <option value="#">Bn</option>
+                        </select>
+                        <select name="#" id="#" class="ms-3 border-0 bg-tran color-white cursor-pointer">
+                            <option value="#">Location</option>
+                            <option value="#">Dhaka</option>
+                            <option value="#">Narayanganj</option>
+                            <option value="#">Rupganj</option>
+                            <option value="#">Munshiganj</option>
+                            <option value="#">Gazipur</option>
+                            <option value="#">Mohamamdpur</option>
+                        </select>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg py-0 justify-content-between">
+                    <a href="index.html"><img src="./assets/img/logo.png" alt="Logo" class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse custom-nav" id="navbarNavDropdown">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link p-0 fs-6 fw-bold hover-color-b" aria-current="page" href="./shop-category.html"><i class="fa fa-bars pe-2"></i> Categories </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link p-0 color-black hover-color-b" href="#">Deals</a></li>
+                            <li class="nav-item"><a class="nav-link p-0 color-black hover-color-b" href="#">Whats a New</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-search position-relative">
+
+                        <input type="text" class="ps-3 border-b ease-tran font-14 w-100 hover-border-a rounded-pill b-1" placeholder="Search for products, brand and more...">
+                        <img src="./assets/img/icons/search.svg" alt="Search Icon" class="position-absolute top-50 search_icon">
+                    </div>
+
+                    <div class="header-top-right d-flex gap-4 align-items-center">
+                        <span class="me-1 position-relative cursor-pointer">
+                            <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">0</span>
+                            <img src="./assets/img/icons/heart.svg" alt="Heart Icon">
+                        </span>
+                        <span class="me-1 position-relative cursor-pointer">
+                            <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">3</span>
+                            <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
+                        </span>
+                        <div class="d-flex align-items-center cursor-pointer  group-hover-header">
+                            <img src="./assets/img/icons/user.svg" alt="Heart Icon">
+                            <span class="ms-2 hover">
+                                <span class="color-para-light">My Account</span>
+                                <p class="color-black fw-bold mb-0 ease-tran">Login</p>
+                            </span>
+                        </div>
+                    </div>
+                    
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ======================================
+    Single Page Banner
+    ====================================== -->
+    <section class="shop-category-banner d-flex align-items-center" style="background: url('./assets/img/cateory-page-image.jpg') center / cover no-repeat;">
+        <div class="container">
+            <div class="col-lg-6">
+                <div class="single-shop-banner-left">
+                    <h1 class="font-56 color-black fw-bold mb-4">Grab Upto 50% off  On Selected Products </h1>
+                    <button class="button sm-button border-0 hover-bg-white-main hover-color-black bg-b color-white fw-semibold rounded-pill">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================
+     Category Shop Products
+    ====================================== -->
+    <section class="single-category-products">
+        <div class="container">
+            <div class="product-fillter-container pt-5 pb-60 align-items-center justify-content-between d-flex">
+
+                <ul class="ps-0 d-flex column-gap-3 mb-0">
+
+                    <li class="">
+                        <div class="custom-select position-relative">
+                            <select name="#" id="#" class="border-0 rounded-pill button sm-button bg-grey"> 
+                                <option value="">Product type</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="custom-select position-relative">
+                            <select name="#" id="#" class="border-0 rounded-pill button sm-button bg-grey"> 
+                                <option value="">Price</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="custom-select position-relative">
+                            <select name="#" id="#" class="border-0 rounded-pill button sm-button bg-grey"> 
+                                <option value="">Review</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="custom-select position-relative">
+                            <select name="#" id="#" class="border-0 rounded-pill button sm-button bg-grey"> 
+                                <option value="">Color</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="">
+                        <div class="custom-select position-relative">
+                            <select name="#" id="#" class="border-0 rounded-pill button sm-button bg-grey"> 
+                                <option value="">Material</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="">
+                        <div class="custom-select position-relative">
+                            <select name="#" id="#" class="border-0 rounded-pill button sm-button bg-grey"> 
+                                <option value="">Offer</option>
+                            </select>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+                <ul class="ps-0 d-flex column-gap-3 mb-0">
+
+                    
+                    <li class="">
+                        <div class="custom-select position-relative">
+                            <select name="#" id="#" class="border bg-tran rounded-pill button sm-button bg-grey"> 
+                                <option value="">Short by</option>
+                            </select>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================
+    Man Fashion Section
+    ====================================== -->
+    <section class="category-section pb-60">
+        <div class="container">
+            <div class="mb-32 d-flex justify-content-between">
+                <h3 class="sec-title color-black mb-0">Shoes For You</h3>
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <div class="row gap-y-24">
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="single-product-box position-relative overflow-hidden rounded-4">
+                        <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
+                        </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-12">
+                    <div class="custom-pagination d-flex justify-content-center pt-60">
+                        <nav aria-label="...">
+                            <ul class="pagination column-gap-2">
+                                <li class="page-item disabled">
+                                    <span class="page-link squire-md-button content-center rounded-circle bg-tran color-black"><i class="fa fa-angle-left"></i></span>
+                                </li>
+                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page"><span class="page-link squire-md-button content-center rounded-circle bg-grey">2</span></li>
+                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">6</a></li>
+                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">7</a></li>
+                                <li class="page-item">
+                                    <a class="page-link squire-md-button content-center rounded-circle bg-tran color-black" href="#"><i class="fa fa-angle-right  color-black"></i></a>
+                                </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+     Weekly Populer Product
+    ====================================== -->
+    <section class="category-section pt-60">
+        <div class="container">
+            <div class="mb-22 d-flex justify-content-between">
+                <h3 class="sec-title color-black mb-0">Weekly Popular Products</h3>
+                <a href="#" class="color-b link-button-b ease-tran">View all <i class="ms-2 fa fa-arrow-right color-black ease-tran"></i></a>
+            </div>
+        </div>
+
+        <div class="slider-container">
+
+            <div class="weekly-populer-slider">
+
+                <div class="single-product-box position-relative overflow-hidden rounded-4">
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                    <div class="single-product-image mb-2">
+                        <img src="./assets/img/product-images/kids-1.jpg" class="w-100" alt="Featured Product Image">
+                    </div>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <small class="color-para-light">(220)</small>
+                        </span>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="single-product-box position-relative overflow-hidden rounded-4">
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                    <div class="single-product-image mb-2">
+                        <img src="./assets/img/product-images/kids-2.jpg" class="w-100" alt="Featured Product Image">
+                    </div>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <small class="color-para-light">(220)</small>
+                        </span>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="single-product-box position-relative overflow-hidden rounded-4">
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                    <div class="single-product-image mb-2">
+                        <img src="./assets/img/product-images/kids-3.jpg" class="w-100" alt="Featured Product Image">
+                    </div>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <small class="color-para-light">(220)</small>
+                        </span>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="single-product-box position-relative overflow-hidden rounded-4">
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                    <div class="single-product-image mb-2">
+                        <img src="./assets/img/product-images/kids-1.jpg" class="w-100" alt="Featured Product Image">
+                    </div>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <small class="color-para-light">(220)</small>
+                        </span>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="single-product-box position-relative overflow-hidden rounded-4">
+                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
+                    <div class="single-product-image mb-2">
+                        <img src="./assets/img/product-images/kids-2.jpg" class="w-100" alt="Featured Product Image">
+                    </div>
+                    <div class="product-detail color-black p-20 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                        </div>
+                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                        <span class="ratings mb-3 d-block pb-1">
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <i class="fa font-14 fa-star color-b"></i>
+                            <small class="color-para-light">(220)</small>
+                        </span>
+                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- ======================================
+        News Section
+    ====================================== -->
+    <div class="news-section pt-80">
+        <div class="container">
+            <div class="mb-32 d-flex justify-content-between">
+                <h3 class="sec-title color-black mb-0">Services To Help You Shop</h3>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="news-box card-animation rounded-4 overflow-hidden d-flex align-items-center">
+                        <img src="./assets/img/news-1.jpg" alt="News Cover">
+                        <div class="news-info p-24-30">
+                            <p class="font-20 color-black fw-semibold mb-2">Frequently Asked Questions</p>
+                            <p class="mb-0 color-para-dark">Updates on safe Shopping in our Stores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-box card-animation rounded-4 overflow-hidden d-flex align-items-center">
+                        <img src="./assets/img/news-2.jpg" alt="News Cover">
+                        <div class="news-info p-24-30">
+                            <p class="font-20 color-black fw-semibold mb-2">Online Payment Process</p>
+                            <p class="mb-0 color-para-dark">Updates on safe Shopping in our Stores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-box card-animation rounded-4 overflow-hidden d-flex align-items-center">
+                        <img src="./assets/img/news-3.jpg" alt="News Cover">
+                        <div class="news-info p-24-30">
+                            <p class="font-20 color-black fw-semibold mb-2">Home Delivery Option</p>
+                            <p class="mb-0 color-para-dark">Updates on safe Shopping in our Stores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======================================
+        Footer Product
+    ====================================== -->
+    <footer class="main-footer pt-60 ">
+        <div class="container">
+            <div class="row justify-content-between pb-60">
+                <div class="col-lg-4">
+                    <div class="footer-box color-para-dark">
+                        <img src="./assets/img/logo.png" class="logo mb-4">
+                        <p class="color-para-dark mb-4">Amet minim mollit non deserunt ullamco est <br> sit aliqua dolor do amet sint. Velit official <br> consequat duis enim velit mollit.</p>
+                        <p class="color-black fw-semibold mb-4 font-20">Payment method:</p>
+                        <img src="./assets/img/paymethod.png" alt="paymethod Image" width="210px">
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-box color-para-dark" >
+                                <p class="fw-semibold">Top categories</p>
+                                <ul class="footer-menu pt-2 mb-0 ps-0 row-gap-3 d-flex flex-column">
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Men’s fashion</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Woman items</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Kid’s items</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Accessories</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Cosmetics</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="footer-box color-para-dark ps-3" >
+                                <p class="fw-semibold">Services</p>
+                                <ul class="footer-menu pt-2 mb-0 ps-0 row-gap-3 d-flex flex-column">
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Terms & conditions</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Shipping & delivery</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Refund & return policy</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Privacy policy</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Order tracking</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-box color-para-dark" >
+                                <p class="fw-semibold">About us</p>
+                                <ul class="footer-menu pt-2 mb-0 ps-0 row-gap-3 d-flex flex-column">
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">News & Blog</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">My Wishlist</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Shop by location</a></li>
+                                    <li><a href="#" class="op-p-8 color-para-dark cursor-pointer hover-color-b">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="footer-copyright pt-4 border-top  pb-4">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center pb-2">
+                    <span class="d-flex align-items-center column-gap-1">
+                        <img src="./assets/img/icons/shop-icon.svg" alt="Shop Icon">
+                        <a href="#" class="color-para-light hover-color-b">Become Seller</a>
+                    </span>
+                    <span>© 2024 Alfusion, All Rights Reserved</span>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="./assets/lib/slick/slick/slick.js" crossorigin="anonymous"></script>
+
+
+    <script src="./assets/js/app.js"></script>
+
+
+</body>
+</html>
