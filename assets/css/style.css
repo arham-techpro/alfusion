@@ -28,8 +28,13 @@ ul{
     --color-gray:#EBEDEC;
     --color-black-main:#131921;
     --color-para-light:#61656A;
+    --color-para-light-2:#B9BBBF;
     --color-para-dark:#333;
+    --bs-breadcrumb-divider: url('../img/icons/bradecumn-icon.svg');
 }
+
+
+
 
 ::-webkit-scrollbar{
     width: 7px;
@@ -86,6 +91,9 @@ Reusable Components
 .color-para-light,.hover-color-para-light:hover{
     color: var(--color-para-light);
 }
+.color-para-light-2,.hover-color-para-light-2:hover{
+    color: var(--color-para-light-2);
+}
 .color-para-dark,.hover-color-para-dark:hover{
     color: var(--color-para-dark);
 }
@@ -122,6 +130,16 @@ Reusable Components
 
 .b-2{
     border: 2px solid;
+}
+.bt-1{
+    border-top: 1px solid #E4E4E4;
+}
+.b-both-1{
+    border: 1px solid #E4E4E4;
+}
+.custom-color-hr{
+    border-top-color: #E4E4E4;
+    opacity: 1;
 }
 .border-a{
     border-color: var(--color-a);
@@ -164,6 +182,18 @@ Reusable Components
     height: 40px;
     width: 40px;
 }
+.btn-icon-hover-show{
+    display: none;
+}
+.btn-has-icon:hover .btn-icon-hover-show{
+    display: block;
+}
+
+.btn-has-icon:hover .btn-icon-hover-none{
+    display: none;
+}
+
+
 .category-button-active{
     background: var(--color-b);
     color: var(--color-white-main);
@@ -193,6 +223,14 @@ Reusable Components
 .currency-icon-sm{
     width: 13px;
     height: 17px;
+}
+.currency-icon-md{
+    width: 15px;
+    height: 19px;
+}
+.currency-icon-lg{
+    width: 20px;
+    height: 24px;
 }
 /* ======================================
 Fonts Sizes and Specing
@@ -416,6 +454,9 @@ Single Prodct Box
     z-index: 99;
     font-weight: 500;
 }
+.discount-badge{
+    background: #FFDADA;
+}
 
 .add-tocart-btn .button{
     font-size: 14px;
@@ -573,6 +614,73 @@ Single Shop Category
 
 
 
+/* ======================================
+Single Product View
+====================================== */
+.product-brade-cumb{
+    background: #EDF0F8;
+    padding: 8px 12px;
+    margin: 28px 0px;
+    border-radius: 8px;
+    display: inline-block;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider);
+    padding-right: 14px;
+}
+.breadcrumb-item+.breadcrumb-item{
+    padding-left: 14px;
+}
+.product-brade-cumb .breadcrumb-item a{
+    color: #A3A9C2 ;
+    font-size: 14px;
+}
+.product-brade-cumb .breadcrumb-item.active a{
+    font-weight: 600;
+    color: var(--color-b) !important
+}
+.product-color-variants li{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+}
+.product-color-variant i{
+    padding-top: 2px;
+}
+.product-color-variant.active-color i{
+    color: #fff !important;
+}
+
+.size-variant-button{
+    padding: 7px 10px;
+    font-size: 14px;
+    background: #F3F3F3;
+    color: #726C6C;
+    font-weight: 500;
+}
+.size-variant-button input[type=radio] {
+    accent-color: var(--color-b);
+}
+.size-variant-button.active-size {
+    background: #EDF0F8;
+    color: #000;
+}
+
+.quantity-button{
+    background: #F3F3F3;
+    padding: 16px 28px;
+}
+.quantity-button input[type=number]{
+    appearance: none;
+    -moz-appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 
 
 
@@ -581,7 +689,6 @@ Footer
 ====================================== */
 .main-footer{
     margin-top: 80px;
-    background: #F7F7F7;
 }
 .footer-box h4{
     letter-spacing: -0.48px;
