@@ -802,7 +802,7 @@ div#productVIdeoModal {
     top: 0;
     left: 0;
     z-index: -1;
-    background: #0000004a;
+    background: var(--color-black-main);
     height: 100%;
     width: 100%;
     display: flex;

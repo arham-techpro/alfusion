@@ -52,7 +52,7 @@ $(document).ready(function(){
             let get_thumb_url = $(this).data("thumb-url");
             $("#productVIdeoModal").modal('show');
             $('.product_video').attr("src",get_videp_url);
-            $('.product_video').attr("poster",get_thumb_url);
+            // $('.product_video').attr("poster",get_thumb_url);
             $('.video-loading-wrapper').addClass('video-loader-show');
         }else{
             
@@ -62,7 +62,9 @@ $(document).ready(function(){
     });
 
 
-    
+    $('.close-video').click(function(){
+        $('.product_video').trigger('pause');
+    })
     $('.product_video').on('canplay', function (event) {
         $('.video-loading-wrapper').removeClass('video-loader-show');
     });
