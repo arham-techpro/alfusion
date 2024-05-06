@@ -47,8 +47,10 @@ $(document).ready(function(){
         if($(this).data("thumb-type") == 'video'){
             
             let get_videp_url = $(this).data("video-url");
+            let get_thumb_url = $(this).data("thumb-url");
             $("#productVIdeoModal").modal('show');
             $('.product_video').attr("src",get_videp_url);
+            $('.product_video').attr("poster",get_thumb_url);
             
         }else{
             
