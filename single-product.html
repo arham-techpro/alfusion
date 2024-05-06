@@ -117,12 +117,53 @@
             </div>
 
             <div class="row">
+
                 <div class="col-lg-6">
-                    <div class="single-product-left"></div>
+                    <div class="single-product-left pe-5 me-3">
+                        
+                        <div class="modal fade" id="productVIdeoModal" tabindex="-1" aria-labelledby="productVIdeoModalLevel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header border-0">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video class="product_video" width="100%" type="video/mp4" controls></video>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="main-image mb-22 rounded-4 overflow-hidden b-both-1">
+                            <img class="w-100 main-image-change-tag cover-image" src="./assets/img/single-image/main-image.jpg" alt="Single Image">
+                        </div>
+                        <div class="product-thumb-wrapper">
+
+                            <div class= "product-image-slider-thumb">
+
+                                <div class="has-product-video position-relative product-detail-thum-img active-image-border" data-thumb-type="video" data-video-url="./assets/video/product-video.mp4">
+                                    <svg width="14px" height="14px" class="play-icon position-absolute"><use xlink:href="./assets/icons/icons.svg#play-icon"></use></svg>
+                                    <img  class="" src="./assets/img/single-image/main-image.jpg" alt="shoe image" alt="shoe image">
+                                </div>
+
+                                <img data-thumb-type="thumb" class="product-detail-thum-img" src="./assets/img/single-image/main-image.jpg" alt="shoe image">
+                               
+                                <img data-thumb-type="thumb" class="product-detail-thum-img" src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt="shoe image">
+
+                                <img data-thumb-type="thumb" class="product-detail-thum-img" src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt = "shoe image">
+                                
+                                
+
+                            </div>
+                        </div>
+                        
+
+                    </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="single-product-right">
-                        <div class="d-flex align-items-start pb-4">
+                        <div class="d-flex align-items-start justify-content-between pb-4">
                             <div>
                                 <h3 class="fw-semibold single-product-title mb-0">Mesh Casual Sneakers For Men - Blue</h3>
                                 <p class="color-para-light my-2">Breathable, lightweight, stylish sneakers for men.</p>
@@ -134,6 +175,9 @@
                                     <i class="fa font-14 fa-star color-b"></i>
                                     <small class="color-para-light">(220)</small>
                                 </span>
+                            </div>
+                            <div>
+                                <span class="squire-md-button center-element rounded-circle cursor-pointer single-page-favourite" style="background: #FFF0F0;"><i class="fa fa-heart fw-light hover-red font-17"></i></span>
                             </div>
                         </div>
                         <div class="pricing-section bt-1 py-4">
@@ -154,19 +198,19 @@
                             <p class="font-14 color-para-light-2">Choose a Color</p>
 
                             <ul class="ps-0 mb-0 product-color-variants d-flex column-gap-3">
-                                <li class="cursor-pointer center-element rounded-circle " style="border-color: #23618A;">
+                                <li class="cursor-pointer center-element rounded-circle " style="border-color: #23618A;" data-product-img-url="./assets/img/single-image/main-image.jpg">
                                     <div class="product-color-variant active-color center-element squire-sm-button rounded-circle" style="background-color: #23618A;">
                                         <i class="fa fa-check" style="color: #23618A;"></i>
                                     </div>
                                 </li>
-                                <li class="cursor-pointer center-element rounded-circle">
-                                    <div class="product-color-variant center-element squire-sm-button rounded-circle" style="background-color: #2B2B2B;">
-                                        <i class="fa fa-check" style="color: #2B2B2B;"></i>
+                                <li class="cursor-pointer center-element rounded-circle" data-product-img-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg">
+                                    <div class="product-color-variant center-element squire-sm-button rounded-circle" style="background-color: #CB0B1C;">
+                                        <i class="fa fa-check" style="color: #CB0B1C;"></i>
                                     </div>
                                 </li>
-                                <li class="cursor-pointer center-element rounded-circle">
-                                    <div class="product-color-variant center-element squire-sm-button rounded-circle" style="background-color: #4F3C37;">
-                                        <i class="fa fa-check" style="color: #4F3C37;"></i>
+                                <li class="cursor-pointer center-element rounded-circle" data-product-img-url="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg">
+                                    <div class="product-color-variant center-element squire-sm-button rounded-circle" style="background-color: #A2612D;">
+                                        <i class="fa fa-check" style="color: #A2612D;"></i>
                                     </div>
                                 </li>
                             </ul>
@@ -239,6 +283,96 @@
 
                     </div>
                 </div>
+
+                <div class="product-full-detail-table py-80">
+                    <div class="col-lg-12">
+                        <h3 class="color fw-semibold mb-32">Mesh Casual Sneakers For Men - Blue Full Specification</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="p-20 bg-white-2 rounded-3">
+                                <h4 class="color-black font-20 fw-semibold mb-22">General</h4>
+
+                                <table class="table table-striped prdocut-detail-table mb-0 font-14">
+                                    <thead>
+                                        <tr>
+                                            <th class="fw-semibold">Feature name</th>
+                                            <th class="fw-semibold">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-20 bg-white-2 rounded-3">
+                                <h4 class="color-black font-20 fw-semibold mb-22">Product details</h4>
+
+                                <table class="table table-striped prdocut-detail-table mb-0 font-14">
+                                    <thead>
+                                        <tr>
+                                            <th class="fw-semibold">Feature name</th>
+                                            <th class="fw-semibold">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Brand</td>
+                                            <td class="fw-semibold">Brand</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -249,7 +383,7 @@
     <!-- ======================================
      Weekly Populer Product
     ====================================== -->
-    <section class="category-section pt-60">
+    <section class="category-section">
         <div class="container">
             <div class="mb-22 d-flex justify-content-between">
                 <h3 class="sec-title color-black mb-0">Related Products</h3>
@@ -262,116 +396,126 @@
             <div class="weekly-populer-slider">
 
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-1.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail color-black p-20 pt-0">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
-                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                    <a href="single-product.html">
+                        <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-1.jpg" class="w-100" alt="Featured Product Image">
                         </div>
-                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
-                        <span class="ratings mb-3 d-block pb-1">
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
-                    </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail color-black p-20 pt-0">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
-                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                    <a href="single-product.html">
+                        <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-2.jpg" class="w-100" alt="Featured Product Image">
                         </div>
-                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
-                        <span class="ratings mb-3 d-block pb-1">
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
-                    </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-3.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail color-black p-20 pt-0">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
-                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                    <a href="single-product.html">
+                        <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-3.jpg" class="w-100" alt="Featured Product Image">
                         </div>
-                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
-                        <span class="ratings mb-3 d-block pb-1">
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
-                    </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </a>
                 </div>
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-4.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail color-black p-20 pt-0">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
-                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                    <a href="single-product.html">
+                        <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-4.jpg" class="w-100" alt="Featured Product Image">
                         </div>
-                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
-                        <span class="ratings mb-3 d-block pb-1">
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
-                    </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </a>
                 </div>
                 <div class="single-product-box position-relative overflow-hidden rounded-4">
-                    <a href="#" class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></a>
-                    <div class="single-product-image mb-2">
-                        <img src="./assets/img/product-images/man-5.jpg" class="w-100" alt="Featured Product Image">
-                    </div>
-                    <div class="product-detail color-black p-20 pt-0">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
-                            <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                    <a href="single-product.html">
+                        <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
+                        <div class="single-product-image mb-2">
+                            <img src="./assets/img/product-images/man-5.jpg" class="w-100" alt="Featured Product Image">
                         </div>
-                        <span class="d-block py-1 font-14  fw-light">Your details here</span>
-                        <span class="ratings mb-3 d-block pb-1">
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <i class="fa font-14 fa-star color-b"></i>
-                            <small class="color-para-light">(220)</small>
-                        </span>
-                        <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
-                    </div>
+                        <div class="product-detail color-black p-20 pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="fw-semibold mb-0 fs-5">New Style Creati...</h4>
+                                <p class="d-inline-flex me-2 mb-0 font-20 fw-bold align-items-center column-gap-1 fw-semibold mb-0 product-card-price"><svg class="currency-icon-sm"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                            </div>
+                            <span class="d-block py-1 font-14  fw-light">Your details here</span>
+                            <span class="ratings mb-3 d-block pb-1">
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <i class="fa font-14 fa-star color-b"></i>
+                                <small class="color-para-light">(220)</small>
+                            </span>
+                            <button class="button sm-button rounded-pill bg-tran color-black border-b-1 font-14 fw-semibold hover-bg-b hover-color-white">Add to Cart</button>
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -463,7 +607,7 @@
     <!-- Slick Slider -->
     <script src="./assets/lib/slick/slick/slick.js" crossorigin="anonymous"></script>
 
-
+    <script src="./assets/js/product-slider.js"></script>
     <script src="./assets/js/app.js"></script>
 
 

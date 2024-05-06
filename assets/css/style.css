@@ -25,6 +25,7 @@ ul{
     --color-b:#0077B6;
     --color-c:#FF5733;
     --color-white-main:#fff;
+    --color-white-2:#F6F6F6;
     --color-gray:#EBEDEC;
     --color-black-main:#131921;
     --color-para-light:#61656A;
@@ -114,6 +115,9 @@ Reusable Components
 }
 .bg-white-main,.hover-bg-white-main:hover{
     background: var(--color-white-main);
+}
+.bg-white-2,.hover-bg-white-2:hover{
+    background: var(--color-white-2);
 }
 .bg-grey,.hover-bg-grey:hover{
     background: var(--color-gray);
@@ -206,7 +210,10 @@ Reusable Components
     color: var(--color-b);
 }
 
-
+.single-page-favourite:hover i{
+    font-weight: 900 !important;
+    color: #B70000;
+}
 
 .content-center{
     display: flex;
@@ -532,7 +539,7 @@ Store
     scale: 1.4;
 }
 .news-box{
-    background: #F6F6F6;
+    background: var(--color-white-2);
 }
 .news-box img{
     width: 170px;
@@ -562,8 +569,8 @@ Brand  css
 }
 .brand-box {
     padding: 12px;
-    background: #F6F6F6;
-    border:1px solid #F6F6F6;
+    background: var(--color-white-2);
+    border:1px solid var(--color-white-2);
 }
 .brand-box:hover{
     transform: translateY(-5px);
@@ -682,6 +689,111 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 
+.main-image{
+    height: 536px;
+}
+.product-image-slider-thumb img{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+.product-thumb-wrapper{
+    padding: 0px 15px;
+}
+.product-image-slider-thumb  .slick-slide{
+    margin:0px 10px;
+}
+.product-image-slider-thumb .slick-track{
+    padding-top: 0px;
+}
+.product-image-slider-thumb .slick-prev,.product-image-slider-thumb .slick-next{
+    background: transparent;
+    width: 15px;
+    height: 25px;
+    border-radius: unset;
+}
+.product-image-slider-thumb .slick-prev{
+    left: -15px;
+}
+.product-image-slider-thumb .slick-next{
+    right: -15px;
+}
+.product-image-slider-thumb .slick-prev:before {
+    content: "\f104";
+    color: var(--color-black-main);
+}
+.product-image-slider-thumb .slick-next:before {
+    color: var(--color-black-main);
+    content: "\f105";
+}
+.product-image-slider-thumb .slick-prev[aria-disabled="true"]:before,.product-image-slider-thumb .slick-next[aria-disabled="true"]:before,
+.product-image-slider-thumb .slick-prev[aria-disabled="true"]:hover:before,.product-image-slider-thumb .slick-next[aria-disabled="true"]:hover:before{
+    color: var(--color-black-main);
+    opacity: .5;
+    cursor: auto !important;
+}
+.product-image-slider-thumb .slick-prev:hover:before , .product-image-slider-thumb .slick-next:hover:before {
+    color: var(--color-b);
+}
+.product-detail-thum-img{
+    cursor: pointer;
+    border:1px solid #fff;
+}
+.has-product-video{
+    overflow: hidden;
+    /* pointer-events: none; */
+}
+.has-product-video::before {
+    position: absolute;
+    content: '';
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(1.5px);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.has-product-video:hover,.product-detail-thum-img:hover,.active-image-border{
+    border:1px solid #EDF0F8;
+    border-radius: 8px;
+}
+.play-icon{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.modal-backdrop{
+    z-index: 99999;
+}
+div#productVIdeoModal {
+    z-index: 999999;
+}
+.prdocut-detail-table tbody, .prdocut-detail-table td, .prdocut-detail-table tfoot, .prdocut-detail-table th, .prdocut-detail-table thead, .prdocut-detail-table tr{
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+.prdocut-detail-table tr th:first-child,
+.prdocut-detail-table tr td:first-child{
+    border-radius: 8px 0px 0px 8px;
+}
+.prdocut-detail-table tr th:last-child,
+.prdocut-detail-table tr td:last-child{
+    border-radius: 0px 8px 8px 0px;
+}
+.prdocut-detail-table tr th,.prdocut-detail-table tr:nth-child(even) td{
+    background: var(--color-white-main);
+}
+
+.prdocut-detail-table tr:nth-child(odd) td{
+    background: transparent;
+}
 
 
 /* ======================================
