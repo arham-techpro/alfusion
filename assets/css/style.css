@@ -691,7 +691,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 .main-image,.main-image img {
-    height: 460px;
+    height: 422px;
 }
 .product-image-slider-thumb img{
     width: 100%;
@@ -747,7 +747,7 @@ input[type=number]::-webkit-inner-spin-button {
 .has-product-video::before {
     position: absolute;
     content: '';
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(0,119,182,68%);
     backdrop-filter: blur(1.5px);
     height: 40px;
     width: 40px;
@@ -759,7 +759,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .has-product-video:hover,.product-detail-thum-img:hover,.active-image-border{
-    border:1px solid #EDF0F8;
+    border:1px solid #D3D3D3;
     border-radius: 8px;
 }
 .play-icon{
