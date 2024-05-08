@@ -22,6 +22,7 @@
 </head>
 <body>
     
+    <div id="cover"> <span class="glyphicon glyphicon-refresh w3-spin preloader-Icon"></span> loading...</div>
 
     <!-- ======================================
     Header Section
@@ -54,25 +55,218 @@
 
         <div class="header-bottom">
             <div class="container">
-                <nav class="navbar navbar-expand-lg py-0 justify-content-between">
+                <nav class="navbar navbar-expand-lg py-0">
+
                     <a href="index.html"><img src="./assets/img/logo.png" alt="Logo" class="logo"></a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse custom-nav" id="navbarNavDropdown">
-                        <ul class="navbar-nav align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link p-0 fs-6 fw-bold hover-color-b" aria-current="page" href="./shop-category.html"><i class="fa fa-bars pe-2"></i> Categories </a>
+                        <ul class="navbar-nav align-items-center ">
+                            <li class="nav-item position-relative ">
+                                <a class="nav-link p-0 fs-6 fw-bold hover-color-b" aria-current="page" href="categories.html"><i class="fa fa-bars pe-2"></i> Categories </a>
+                                <div class="submenu position-absolute rounded-3">
+                                    <div class="sebmenu-content">
+                                        <h3 class="font-20 mb-4 pb-3 fw-semibold">Categories</h3>
+                                        <div class="row row-gap-4">
+
+                                            <div class="col-sm-6">
+                                                <a href="shop-category.html">
+                                                    <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
+                                                        <img width="58px" height="62px" src="./assets/img/category-images/mens.jpg" alt="Category Image" class="cover-image rounded-3">
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Men’s collection</h6>
+                                                            <p class="mb-0 color-para-dark font-12">240 items available</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="shop-category.html">
+                                                    <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
+                                                        <img width="58px" height="62px" src="./assets/img/category-images/cosmetics.jpg" alt="Category Image" class="cover-image rounded-3">
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Cosmetics</h6>
+                                                            <p class="mb-0 color-para-dark font-12">850 items available</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="shop-category.html">
+                                                    <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
+                                                        <img width="58px" height="62px" src="./assets/img/discount-2.jpg" alt="Category Image" class="cover-image rounded-3">
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Women’s collection</h6>
+                                                            <p class="mb-0 color-para-dark font-12">1440 items available</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="shop-category.html">
+                                                    <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
+                                                        <img width="58px" height="62px" src="./assets/img/single-image/main-image-3.jpg" alt="Category Image" class="cover-image rounded-3">
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Shoe’s collection</h6>
+                                                            <p class="mb-0 color-para-dark font-12">540 items available</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="shop-category.html">
+                                                    <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
+                                                        <img width="58px" height="62px" src="./assets/img/product-images/kids-1.jpg" alt="Category Image" class="cover-image rounded-3">
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Bag collection</h6>
+                                                            <p class="mb-0 color-para-dark font-12">240 items available</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="shop-category.html">
+                                                    <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
+                                                        <img width="58px" height="62px" src="./assets/img/store-2.jpg" alt="Category Image" class="cover-image rounded-3">
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Accessories</h6>
+                                                            <p class="mb-0 color-para-dark font-12">240 items available</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item"><a class="nav-link p-0 color-black hover-color-b" href="#">Deals</a></li>
                             <li class="nav-item"><a class="nav-link p-0 color-black hover-color-b" href="#">Whats a New</a></li>
+                        
                         </ul>
                     </div>
 
                     <div class="header-search position-relative">
 
-                        <input type="text" class="ps-3 border-b ease-tran font-14 w-100 hover-border-a rounded-pill b-1" placeholder="Search for products, brand and more...">
-                        <img src="./assets/img/icons/search.svg" alt="Search Icon" class="position-absolute top-50 search_icon">
+                        <div class="header-search-container">
+                            <input type="text" class="ps-3 border-b ease-tran font-14 w-100 hover-border-a rounded-pill b-1" placeholder="Search for products, brand and more...">
+                            <img src="./assets/img/icons/search.svg" alt="Search Icon" class="position-absolute top-50 search_icon">
+                        </div>
+                        
+                        <div class="search-content position-absolute rounded-4">
+                            <ul class="search-items ps-0 mb-0">
+
+                                <li class="d-flex justify-content-between color-black align-items-center">
+                                    <div class="d-flex align-items-center column-gap-3"> 
+                                        <img width="48px" height="40px" class="rounded-3 cover-image" src="./assets/img/product-images/man-3.jpg" alt="Featured Product Image">
+                                        <span class="fw-semibold">Bangadesh T...</span>
+                                    </div>
+                                    <span class="ratings d-block">
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <small class="color-para-light">(220)</small>
+                                    </span>
+                                    <p class="d-inline-flex mb-0 font-20 fw-bold align-items-baseline column-gap-1 fw-semibold mb-0"><svg width="12px" height="15px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 350</p>
+                                </li>
+
+                                <li class="d-flex justify-content-between color-black align-items-center">
+                                    <div class="d-flex align-items-center column-gap-3"> 
+                                        <img width="48px" height="40px" class="rounded-3 cover-image" src="./assets/img/headphone.jpg" alt="Featured Product Image">
+                                        <span class="fw-semibold">Headphones ...</span>
+                                    </div>
+                                    <span class="ratings d-block">
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <small class="color-para-light">(220)</small>
+                                    </span>
+                                    <p class="d-inline-flex mb-0 font-20 fw-bold align-items-baseline column-gap-1 fw-semibold mb-0"><svg width="12px" height="15px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                                </li>
+
+                                <li class="d-flex justify-content-between color-black align-items-center">
+                                    <div class="d-flex align-items-center column-gap-3"> 
+                                        <img width="48px" height="40px" class="rounded-3 cover-image" src="./assets/img/headphone.jpg" alt="Featured Product Image">
+                                        <span class="fw-semibold">Headphones ...</span>
+                                    </div>
+                                    <span class="ratings d-block">
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <small class="color-para-light">(220)</small>
+                                    </span>
+                                    <p class="d-inline-flex mb-0 font-20 fw-bold align-items-baseline column-gap-1 fw-semibold mb-0"><svg width="12px" height="15px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                                </li>
+
+                                <li class="d-flex justify-content-between color-black align-items-center">
+                                    <div class="d-flex align-items-center column-gap-3"> 
+                                        <img width="48px" height="40px" class="rounded-3 cover-image" src="./assets/img/headphone.jpg" alt="Featured Product Image">
+                                        <span class="fw-semibold">Headphones ...</span>
+                                    </div>
+                                    <span class="ratings d-block">
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <small class="color-para-light">(220)</small>
+                                    </span>
+                                    <p class="d-inline-flex mb-0 font-20 fw-bold align-items-baseline column-gap-1 fw-semibold mb-0"><svg width="12px" height="15px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                                </li>
+
+                                <li class="d-flex justify-content-between color-black align-items-center">
+                                    <div class="d-flex align-items-center column-gap-3"> 
+                                        <img width="48px" height="40px" class="rounded-3 cover-image" src="./assets/img/headphone.jpg" alt="Featured Product Image">
+                                        <span class="fw-semibold">Headphones ...</span>
+                                    </div>
+                                    <span class="ratings d-block">
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <small class="color-para-light">(220)</small>
+                                    </span>
+                                    <p class="d-inline-flex mb-0 font-20 fw-bold align-items-baseline column-gap-1 fw-semibold mb-0"><svg width="12px" height="15px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                                </li>
+
+                                <li class="d-flex justify-content-between color-black align-items-center">
+                                    <div class="d-flex align-items-center column-gap-3"> 
+                                        <img width="48px" height="40px" class="rounded-3 cover-image" src="./assets/img/headphone.jpg" alt="Featured Product Image">
+                                        <span class="fw-semibold">Headphones ...</span>
+                                    </div>
+                                    <span class="ratings d-block">
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <i class="fa font-14 fa-star color-b"></i>
+                                        <small class="color-para-light">(220)</small>
+                                    </span>
+                                    <p class="d-inline-flex mb-0 font-20 fw-bold align-items-baseline column-gap-1 fw-semibold mb-0"><svg width="12px" height="15px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 650</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
                     </div>
 
                     <div class="header-top-right d-flex gap-4 align-items-center">
