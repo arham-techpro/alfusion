@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
-    <title>Alfusion - Shop Category</title>
+    <title>Alfusion - Register</title>
     
     <!-- Library CSS -->
     <script src="https://kit.fontawesome.com/5c1a266e25.js" crossorigin="anonymous"></script>
@@ -22,8 +22,8 @@
 </head>
 <body>
     
-
     <div id="cover"> <span class="glyphicon glyphicon-refresh w3-spin preloader-Icon"></span> loading...</div>
+
 
     <!-- ======================================
     Header Section
@@ -74,7 +74,7 @@
                                         <div class="row row-gap-4">
 
                                             <div class="col-sm-6">
-                                                <a href="submenu-shop-product.html">
+                                                <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/category-images/mens.jpg" alt="Category Image" class="cover-image rounded-3">
                                                         <div>
@@ -86,7 +86,7 @@
                                             </div>
 
                                             <div class="col-sm-6">
-                                                <a href="submenu-shop-product.html">
+                                                <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/category-images/cosmetics.jpg" alt="Category Image" class="cover-image rounded-3">
                                                         <div>
@@ -98,7 +98,7 @@
                                             </div>
 
                                             <div class="col-sm-6">
-                                                <a href="submenu-shop-product.html">
+                                                <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/discount-2.jpg" alt="Category Image" class="cover-image rounded-3">
                                                         <div>
@@ -110,7 +110,7 @@
                                             </div>
 
                                             <div class="col-sm-6">
-                                                <a href="submenu-shop-product.html">
+                                                <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/single-image/main-image-3.jpg" alt="Category Image" class="cover-image rounded-3">
                                                         <div>
@@ -123,7 +123,7 @@
                                             </div>
 
                                             <div class="col-sm-6">
-                                                <a href="submenu-shop-product.html">
+                                                <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/product-images/kids-1.jpg" alt="Category Image" class="cover-image rounded-3">
                                                         <div>
@@ -136,7 +136,7 @@
                                             </div>
 
                                             <div class="col-sm-6">
-                                                <a href="submenu-shop-product.html">
+                                                <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/store-2.jpg" alt="Category Image" class="cover-image rounded-3">
                                                         <div>
@@ -295,213 +295,64 @@
     </header>
 
 
-    <section class="categories-inventory mt-32">
+    <!-- ======================================
+    Login/Register Section
+    ====================================== -->
+    <section class="authform pt-60">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <div class="auth-box">
+                        <div class="auth-box-header mb-4 pb-2">
+                            <h3>Login to <span class="color-b">Alfusion</span></h3>
+                            <p class="font-14 color-para-dark mb-0">Enter your Credentials to access your account</p>
+                        </div>
 
-            <div class="row row-gap-2 pb-60">
 
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/mens.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Men’s collection</p>
-                        </a>
+                        <form action="#">
+                            
+                            <div class="mb-3">
+                                <label for="emailPhone" class="form-label font-14">Email / Phone*</label>
+                                <input type="text" class="form-control font-14" id="emailPhone" placeholder="Write your email or phone">
+                            </div>
+                            <div class="mb-3 has-right-input-icon">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="password" class="form-label font-14">Password*</label>
+                                    <a href="#" class="font-14 color-b hover-color-black">Forgot password?</a>
+                                </div>
+                                <div class="has-right-input-icon position-relative">
+                                    <span class="cursor-pointer position-absolute top-50 translate-middle end-0 show-password">
+                                        <svg height="20px" width="20px"><use xlink:href="./assets/icons/icons.svg#eye-slash-icon"></use></svg>
+                                    </span>
+                                    <input type="password" class="form-control font-14" id="password" placeholder="Write your password">
+                                </div>
+                            </div>
+                            
+                            <div class="form-check mb-32">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberme">
+                                <label class="form-check-label font-14" for="rememberme">Remember me</label>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="button hover-bg-b ease-tran border-0 fw-bold sm-button justify-content-center rounded-3 w-100 bg-black-main color-white">Create Account</button>
+                            </div>
+                            <p class="text-center mb-3 fw-semibold color-black">Or continue with</p>
+                            <div class="mb-3">
+                                <button type="submit" class="button facebook-btn ease-tran fw-semibold sm-button justify-content-center align-items-center rounded-3 w-100 color-white"><i class="fab fa-facebook me-2 fs-5"></i> Sign In with Facebook</button>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="button google-btn ease-tran fw-semibold align-items-center sm-button justify-content-center rounded-3 w-100 color-white"><i class="fab fa-google me-2 fs-5"></i>  Sign In with Google</button>
+                            </div>
+                            <p class="text-center mb-3 fw-semibold color-black">Don’t have an account? <a class="color-b hover-color-black" href="register.html">Sign Up</a></p>
+                        </form>
+
                     </div>
                 </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/woman.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Woman collection</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/bag.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Bags</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/cosmetics.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Cosmetics</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/hand-bag.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Hand bag</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/accessories.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Accessories</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/mens.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Men’s collection</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/woman.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Woman collection</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/bag.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Bags</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/cosmetics.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Cosmetics</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/hand-bag.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Hand bag</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/accessories.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Accessories</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/mens.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Men’s collection</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/woman.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Woman collection</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/bag.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Bags</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/cosmetics.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Cosmetics</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/hand-bag.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Hand bag</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="single-category text-center">
-                        <a href="submenu-shop-product.html">
-                            <div class="single-category-image"><img src="./assets/img/category-images/accessories.jpg" alt="Category Image" class="w-100 rounded-4"></div>
-                            <p class="fw-semibold mt-2 color-black mt-o">Accessories</p>
-                        </a>
-                    </div>
-                </div>
-
-                
             </div>
-
-            <div class="d-flex justify-content-between">
-
-                <div class="main-pagination">
-                    <div class="custom-pagination d-flex justify-content-center">
-                        <nav aria-label="...">
-                            <ul class="pagination column-gap-2 mb-0">
-                                <li class="page-item disabled">
-                                    <span class="page-link squire-md-button content-center rounded-circle bg-tran color-black"><i class="fa fa-angle-left"></i></span>
-                                </li>
-                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">1</a></li>
-                                <li class="page-item active" aria-current="page"><span class="page-link squire-md-button content-center rounded-circle bg-grey">2</span></li>
-                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">5</a></li>
-                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">6</a></li>
-                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">7</a></li>
-                                <li class="page-item"><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">...</a></li>
-                                <li class="page-item "><a class="page-link squire-md-button content-center rounded-circle bg-grey" href="#">169</a></li>
-                                <li class="page-item">
-                                    <a class="page-link squire-md-button content-center rounded-circle bg-tran color-black" href="#"><i class="fa fa-angle-right  color-black"></i></a>
-                                </li>
-                            </ul>
-                          </nav>
-                    </div>
-                </div>
-
-                <div class="pagination-info d-flex column-gap-3 font-14 fw-semibold align-items-center">
-                    <span class="color-para-dark">Total 40 pages</span>
-                    <span class="color-para-dark">Go to pages</span>
-                    <input type="text" class="rounded-pill squire-md-button text-center fw-bold font-14" value="0">
-                    <span class="color-para-dark hover-color-b cursor-pointer">Go</span>
-                </div>
-
-            </div>
-
         </div>
     </section>
+
+
+
 
 
 

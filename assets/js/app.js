@@ -47,6 +47,21 @@ $(document).ready(function(){
     });
 
 
+    $('.show-password').click(function(){
+        let get_input_type = $(this).siblings("input").attr('type');
+        let get_icon_link = $(this).children().children();
+        if(get_input_type == 'text'){
+            $(this).siblings("input").attr('type','password');
+            get_icon_link.attr("xlink:href","./assets/icons/icons.svg#eye-slash-icon");
+            
+        }else{
+            $(this).siblings("input").attr('type','text');
+            get_icon_link.attr("xlink:href","./assets/icons/icons.svg#eye-icon");
+        }
+        
+    });
+
+
 
 });
 

@@ -103,7 +103,22 @@ Reusable Components
 .tending-box-content .button{
     background: #BF4126;
 }
-
+.facebook-btn{
+    border:1px solid #1877F2;
+    background: #1877F2;
+}
+.facebook-btn:hover{
+    background: transparent;
+    color: #1877F2;
+}
+.google-btn{
+    border:1px solid #EA4335;
+    background: #EA4335;
+}
+.google-btn:hover{
+    background: transparent;
+    color: #EA4335;
+}
 .bg-a,.hover-bg-a:hover{
     background: var(--color-a);
 }
