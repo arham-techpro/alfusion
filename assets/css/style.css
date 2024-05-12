@@ -222,6 +222,10 @@ Reusable Components
     height: 20px;
     width: 20px;
 }
+.squire-xxs-button{
+    height: 16px;
+    width: 16px;
+}
 .squire-md-button{
     height: 40px;
     width: 40px;
@@ -1058,6 +1062,10 @@ div#productVIdeoModal {
     border-bottom: 1px solid var(--color-para-light-3);
     padding-bottom: 24px;
 }
+.single-checkout-items:not(:last-child){
+    border-bottom: 1px solid var(--color-para-light-3);
+    padding-bottom: 16px;
+}
 .cart-short-product-items:not(:last-child){
     padding-bottom: 8px;
 }
@@ -1068,7 +1076,17 @@ div#productVIdeoModal {
 .light-color-placeholder::placeholder{
     color: var(--color-para-light-3);
 }
-
+.input-md{
+    padding: 14px 20px;
+}
+.custom-select-2{
+    appearance: none;
+    background: url('../img/icons/arrow-up-down.svg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: right;
+    background-origin: content-box;
+}
 /* ======================================
 Footer
 ====================================== */

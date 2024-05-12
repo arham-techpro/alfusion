@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
-    <title>Alfusion - Register</title>
+    <title>Alfusion - Cart Page</title>
     
     <!-- Library CSS -->
     <script src="https://kit.fontawesome.com/5c1a266e25.js" crossorigin="anonymous"></script>
@@ -23,6 +23,7 @@
 <body>
     
     <div id="cover"> <span class="glyphicon glyphicon-refresh w3-spin preloader-Icon"></span> loading...</div>
+
 
     <!-- ======================================
     Header Section
@@ -274,12 +275,10 @@
                             <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">0</span>
                             <img src="./assets/img/icons/heart.svg" alt="Heart Icon">
                         </span>
-                        <a href="cart.html">
-                            <span class="me-1 position-relative cursor-pointer">
-                                <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">3</span>
-                                <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
-                            </span>
-                        </a>
+                        <span class="me-1 position-relative cursor-pointer">
+                            <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">3</span>
+                            <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
+                        </span>
                         <div class="d-flex align-items-center cursor-pointer  group-hover-header">
                             <img src="./assets/img/icons/user.svg" alt="Heart Icon">
                             <a class="ms-2" href="login.html">
@@ -296,68 +295,338 @@
     </header>
 
 
+    
     <!-- ======================================
-    Login/Register Section
+    Page breadcrumb
     ====================================== -->
-    <section class="authform pt-60">
+    <section class="page-breadcrumb my-3">
+        <div class="container">
+            <div class="product-brade-cumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><a>Checkout</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================
+    Card Section
+    ====================================== -->
+    <section class="cart-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mx-auto">
-                    <div class="auth-box">
-                        <div class="auth-box-header mb-4 pb-2">
-                            <h3>Create your <span class="color-b">Alfusion account</span></h3>
-                            <p class="font-14 color-para-dark mb-0">Write your Credentials & create your account</p>
+
+                <div class="col-lg-8">
+
+                    <div class="cart-page-left-top">
+
+                        <div class="cart-left-header mb-3 bb-new-1 pb-1">
+                            <h3 class="fw-semibold color-black fs-3">Review Item & Shipping</h3>
                         </div>
 
+                        <div class="cart-products-by-shop p-3 bboth-new-1 d-flex flex-column rounded-4 row-gap-3">
+                            
+                            <div class="d-flex justify-content-between single-checkout-items align-items-center">
 
-                        <form action="#">
-                            <div class="mb-3">
-                                <label for="name" class="form-label font-14">Full name</label>
-                                <input type="text" class="form-control font-14" id="name" placeholder="Write your full name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="emailPhone" class="form-label font-14">Email / Phone*</label>
-                                <input type="text" class="form-control font-14" id="emailPhone" placeholder="Write your email or phone">
-                            </div>
-                            <div class="mb-3 has-right-input-icon">
-                                <label for="password" class="form-label font-14">Password*</label>
-                                <div class="has-right-input-icon position-relative">
-                                    <span class="cursor-pointer position-absolute top-50 translate-middle end-0 show-password">
-                                        <svg height="20px" width="20px"><use xlink:href="./assets/icons/icons.svg#eye-slash-icon"></use></svg>
-                                    </span>
-                                    <input type="password" class="form-control font-14" id="password" placeholder="Write your password">
+                                <div class="d-flex gap-x-24 align-items-center">
+
+                                    <img src="./assets/img/single-image/main-image.jpg" width="80px" height="78px" class="cover-image rounded-3 bboth-new-1" alt="Product Image">
+                                    <div>
+                                        <h5 class="color-black fw-semibold fs-5">Mesh Casual Sneakers For Men - Blue</h5>
+
+                                        <div class="d-flex gap-x-24">
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-0">Color: </span>
+                                                <span class="product-color-variant active-color d-flex squire-xxs-button rounded-circle" style="background-color: #2B2B2B;"></span>
+                                            </div>
+
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-1">Size: 40 </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-1">Quantity: 2</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="confirm_password" class="form-label font-14">Confirm Password*</label>
-                                <div class="has-right-input-icon position-relative">
-                                    <span class="cursor-pointer position-absolute top-50 translate-middle end-0 show-password">
-                                        <svg height="20px" width="20px"><use xlink:href="./assets/icons/icons.svg#eye-slash-icon"></use></svg>
-                                    </span>
-                                    <input type="password" class="form-control font-14" id="confirm_password" placeholder="Rewrite your password">
+                                
+                                <div class="d-flex align-items-center  column-gap-3">
+                                    <span class="mb-0 me-3 fw-bold color-black font-22 d-flex align-items-center mb-0"><svg class="me-1" width="14px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
                                 </div>
+
                             </div>
-                            <div class="form-check mb-32">
-                                <input class="form-check-input" type="checkbox" value="" id="termsCondition">
-                                <label class="form-check-label font-14" for="termsCondition">
-                                    I agree to the <span class="color-b cursor-pointer hover-color-black">Terms and Conditions</span>
+                            
+                            <div class="d-flex justify-content-between single-checkout-items align-items-center">
+
+                                <div class="d-flex gap-x-24 align-items-center">
+
+                                    <img src="./assets/img/single-image/main-image.jpg" width="80px" height="78px" class="cover-image rounded-3 bboth-new-1" alt="Product Image">
+                                    <div>
+                                        <h5 class="color-black fw-semibold fs-5">Mesh Casual Sneakers For Men - Blue</h5>
+
+                                        <div class="d-flex gap-x-24">
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-0">Color: </span>
+                                                <span class="product-color-variant active-color d-flex squire-xxs-button rounded-circle" style="background-color: #2B2B2B;"></span>
+                                            </div>
+
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-1">Size: 40 </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-1">Quantity: 2</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="d-flex align-items-center  column-gap-3">
+                                    <span class="mb-0 me-3 fw-bold color-black font-22 d-flex align-items-center mb-0"><svg class="me-1" width="14px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
+                                </div>
+
+                            </div>
+                            
+                            <div class="d-flex justify-content-between single-checkout-items align-items-center">
+
+                                <div class="d-flex gap-x-24 align-items-center">
+
+                                    <img src="./assets/img/single-image/main-image.jpg" width="80px" height="78px" class="cover-image rounded-3 bboth-new-1" alt="Product Image">
+                                    <div>
+                                        <h5 class="color-black fw-semibold fs-5">Mesh Casual Sneakers For Men - Blue</h5>
+
+                                        <div class="d-flex gap-x-24">
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-0">Color: </span>
+                                                <span class="product-color-variant active-color d-flex squire-xxs-button rounded-circle" style="background-color: #2B2B2B;"></span>
+                                            </div>
+
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-1">Size: 40 </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="color-para-light-2 font-14 me-2 pe-1">Quantity: 2</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="d-flex align-items-center  column-gap-3">
+                                    <span class="mb-0 me-3 fw-bold color-black font-22 d-flex align-items-center mb-0"><svg class="me-1" width="14px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
+                                </div>
+
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="form-check d-flex align-items-center p-20 px-0 mb-0">
+                        <input class="form-check-input m-0 me-2" type="checkbox" value="" id="returncustomer">
+                        <label class="form-check-label font-14" for="returncustomer">Returning Customer?</label>
+                    </div>                    
+
+                    <div class="cart-page-left-top">
+
+                        <div class="cart-left-header mb-3 bb-new-1 pb-1 d-flex justify-content-between">
+                            <h3 class="fw-semibold color-black fs-3">Review Item & Shipping</h3>
+                            <div>
+                                <button class="button hover-icon-reverse align-items-center xs-button border-0 font-12 color-black fw-semibold rounded-pill bg-white-3 hover-bg-b hover-color-white ease-tran">Save Information</button>
+                            </div>
+                        </div>
+
+                        <div class="cart-products-by-shop p-3 bboth-new-1 d-flex flex-column rounded-4 row-gap-3">
+                            
+                            <form action="">
+
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">First Name*</label>
+                                            <input type="text" class="form-control light-color-placeholder rounded-3 input-md" id="name" placeholder="First Name e.g John, Mary">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">Last Name*</label>
+                                            <input type="text" class="form-control light-color-placeholder rounded-3 input-md" id="name" placeholder="Last Name e.g John, Mary">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">Email Address</label>
+                                            <input type="text" class="form-control light-color-placeholder rounded-3 input-md" id="name" placeholder="Your email@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">Phone Number*</label>
+                                            <input type="text" class="form-control light-color-placeholder rounded-3 input-md" id="name" placeholder="+880 0000 000 000">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">Country*</label>
+                                            <select type="text" class="form-control light-color-placeholder rounded-3 input-md custom-select-2" id="name" placeholder="Bangladesh"> 
+                                                <option value="#">Bangladesh</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">City*</label>
+                                            <select type="text" class="form-control light-color-placeholder rounded-3 input-md custom-select-2" id="name" placeholder="Bangladesh"> 
+                                                <option value="#">Pick City</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">Area*</label>
+                                            <select type="text" class="form-control light-color-placeholder rounded-3 input-md custom-select-2" id="name" placeholder="Bangladesh"> 
+                                                <option value="#">Pick Area</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">Postal code*</label>
+                                            <input type="text" class="form-control light-color-placeholder rounded-3 input-md" id="name" placeholder="Enter your postal code">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    
+                                    <div class="col-sm-12">
+                                        <div>
+                                            <label for="name" class="form-label ">Street Address*</label>
+                                            <input type="text" class="form-control light-color-placeholder rounded-3 input-md" id="name" placeholder="Enter your Street Address">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <label for="name" class="form-label ">Location Type*</label>
+                                            <select type="text" class="form-control light-color-placeholder rounded-3 input-md custom-select-2" id="name" placeholder="Bangladesh"> 
+                                                <option value="#">Home</option>
+                                                <option value="#">Office</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="name" class="form-label" style="visibility: hidden;">Buttons</label>
+                                        <div class="d-flex column-gap-3">
+
+                                            <button type="submit" class="button input-md bg-tran  justify-content-center align-items-center color-black hover-color-white rounded-2 hover-bg-black-main ease-tran px-5">Reset</button>
+
+                                            <button type="submit" class="button input-md bg-b border-0 justify-content-center align-items-center color-para-light-3 rounded-2 w-100 hover-bg-black-main ease-tran">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="cart-right-side">
+
+                        <div class="cart-left-header mb-3 pb-1">
+                            <h3 class="fw-semibold color-black fs-3">Payment Details</h3>
+                        </div>
+                        
+                        <div class=" bg-white-4 rounded-3  p-3">
+                            <p class="fs-5 color-black fw-500">Payment options</p>
+                            <div class="form-check d-flex align-items-center pb-3">
+                                <input class="form-check-input mt-0 me-2" type="radio" name="paymnet_option" id="cod">
+                                <label class="form-check-label font-14 cursor-pointer" for="cod">Cash On Delivery</label>
+                            </div>
+                            <div class="form-check d-flex align-items-center pb-3">
+                                <input class="form-check-input mt-0 me-2" type="radio" name="paymnet_option" id="paypal">
+                                <label class="form-check-label font-14 cursor-pointer" for="paypal">Paypal</label>
+                            </div>
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input mt-0 me-2" type="radio" name="paymnet_option" id="card">
+                                <label class="form-check-label font-14 cursor-pointer" for="card">Credit or Debit card</label>
+                            </div>
+
+
+                            <hr class="new-color-border">
+
+                            <div class="d-flex justify-content-between align-items-center align-items-start pb-3">
+
+                                <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Subtotal</span>
+                                <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 2240</span>
+        
+                            </div>
+    
+                            <div class="d-flex justify-content-between align-items-center align-items-start pb-3">
+                                
+                                <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Shipping Charge</span>
+                                <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 120</span>
+        
+                            </div>
+    
+                            <div class="d-flex justify-content-between align-items-center align-items-start">
+                                
+                                <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Coupon Discount (-)</span>
+                                <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 0.00</span>
+        
+                            </div>
+    
+                            <hr class="new-color-border">
+                            
+                            <div class="d-flex justify-content-between align-items-center align-items-start pb-3">
+                                
+                                <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Total</span>
+                                <span class="mb-0 color-black d-flex fw-bold align-items-center mb-0 font-20"><svg class="me-1" width="12px" height="17px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg>2285</span>
+        
+                            </div>
+    
+                            <div class="pb-2">
+                                <button type="submit" class="button xs-button bg-b border-0 justify-content-center font-14 align-items-center color-para-light-3 rounded-2 w-100  hover-bg-black-main ease-tran">Confirm your payment <b class="ps-1"> 2285tk</b> </button>
+                                
+                            </div>
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input mt-0 me-2" type="checkbox" value="" id="termsCondition">
+                                <label class="form-check-label" for="termsCondition" style="font-size: 11px;">
+                                    I agree to the <span class="color-b cursor-pointer hover-color-black">Terms & conditions, Privacy policy</span> & <span class="color-b cursor-pointer hover-color-black">Return policy</span>
                                 </label>
                             </div>
-                            <div class="mb-3">
-                                <button type="submit" class="button hover-bg-b ease-tran border-0 fw-bold sm-button justify-content-center rounded-3 w-100 bg-black-main color-white">Create Account</button>
-                            </div>
-                            <p class="text-center mb-3 fw-semibold color-black">Or continue with</p>
-                            <div class="mb-3">
-                                <button type="submit" class="button facebook-btn ease-tran fw-semibold sm-button justify-content-center align-items-center rounded-3 w-100 color-white"><i class="fab fa-facebook me-2 fs-5"></i> Sign In with Facebook</button>
-                            </div>
-                            <div class="mb-3">
-                                <button type="submit" class="button google-btn ease-tran fw-semibold align-items-center sm-button justify-content-center rounded-3 w-100 color-white"><i class="fab fa-google me-2 fs-5"></i>  Sign In with Google</button>
-                            </div>
-                            <p class="text-center mb-3 fw-semibold color-black">Already have account?  <a class="color-b hover-color-black" href="login.html">Login</a></p>
-                        </form>
+                        </div>
 
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
