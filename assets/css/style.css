@@ -26,10 +26,13 @@ ul{
     --color-c:#FF5733;
     --color-white-main:#fff;
     --color-white-2:#F6F6F6;
+    --color-white-3:#EDF0F8;
+    --color-white-4:#F7F7F7;
     --color-gray:#EBEDEC;
     --color-black-main:#131921;
     --color-para-light:#61656A;
     --color-para-light-2:#B9BBBF;
+    --color-para-light-3:#E0E0E0;
     --color-para-dark:#333;
     --bs-breadcrumb-divider: url('../img/icons/bradecumn-icon.svg');
 }
@@ -95,6 +98,9 @@ Reusable Components
 .color-para-light-2,.hover-color-para-light-2:hover{
     color: var(--color-para-light-2);
 }
+.color-para-light-3,.hover-color-para-light-3:hover{
+    color: var(--color-para-light-3);
+}
 .color-para-dark,.hover-color-para-dark:hover{
     color: var(--color-para-dark);
 }
@@ -134,6 +140,12 @@ Reusable Components
 .bg-white-2,.hover-bg-white-2:hover{
     background: var(--color-white-2);
 }
+.bg-white-3,.hover-bg-white-3:hover{
+    background: var(--color-white-3);
+}
+.bg-white-4,.hover-bg-white-4:hover{
+    background: var(--color-white-4);
+}
 .bg-grey,.hover-bg-grey:hover{
     background: var(--color-gray);
 }
@@ -166,6 +178,12 @@ Reusable Components
 .border-b-1{
     border: 1px solid var(--color-b);
 }
+.bb-new-1{
+    border-bottom: 1px solid var(--color-para-light-3);
+}
+.bboth-new-1{
+    border: 1px solid var(--color-para-light-3);
+}
 .border-gray-1{
     border: 1px solid #A3A9C2;
 }
@@ -193,13 +211,24 @@ Reusable Components
 .sm-button{
     padding: 10px 24px;
 }
+.xs-button{
+    padding: 8px 14px;
+}
 .squire-sm-button{
     height: 36px;
     width: 36px;
 }
+.squire-xs-button{
+    height: 20px;
+    width: 20px;
+}
 .squire-md-button{
     height: 40px;
     width: 40px;
+}
+.squire-lg-button{
+    height: 46px;
+    width: 46px;
 }
 .btn-icon-hover-show{
     display: none;
@@ -241,6 +270,9 @@ Reusable Components
     font-size: 32px;
     font-weight: 500;
 }
+.fw-500{
+    font-weight: 500;
+}
 
 .currency-icon-sm{
     width: 13px;
@@ -262,6 +294,9 @@ Fonts Sizes and Specing
 }
 .font-20{
     font-size: 20px;
+}
+.font-22{
+    font-size: 22px;
 }
 .font-14{
     font-size: 14px;
@@ -318,6 +353,15 @@ Fonts Sizes and Specing
 }
 .p-24-30{
     padding: 24px 30px;
+}
+.gap-x-24{
+    column-gap: 24px;
+}
+.gap-x-48{
+    column-gap: 48px;
+}
+.gap-x-24{
+    column-gap: 24px;
 }
 /* ======================================
 Header
@@ -410,7 +454,7 @@ nav.navbar.navbar-expand-lg.py-0.justify-content-between {
     width: 540px;
 }
 .search-content{
-    background: #F7F7F7;
+    background: var(--color-white-4);
     top: 62px;
     right: 0;
     padding: 32px;
@@ -423,7 +467,7 @@ nav.navbar.navbar-expand-lg.py-0.justify-content-between {
     overflow: hidden;
 }
 .submenu.position-absolute {
-    background: #F7F7F7;
+    background: var(--color-white-4);
     transition: .3s ease-in-out;
     width: 742px;
     top: 84px;
@@ -522,7 +566,8 @@ Category Slider
     color: #fff;
     font-family:tahoma;
     z-index: 999999999;
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -751,7 +796,7 @@ Single Shop Category
 Single Product View
 ====================================== */
 .product-brade-cumb{
-    background: #EDF0F8;
+    background: var(--color-white-3);
     padding: 8px 12px;
     margin: 10px 0px;
     border-radius: 8px;
@@ -791,17 +836,31 @@ Single Product View
     color: #726C6C;
     font-weight: 500;
 }
+.size-variant-button-sm{
+    padding: 4px 8px;
+}
 .size-variant-button input[type=radio] {
     accent-color: var(--color-b);
 }
+.form-check-input:checked{
+    background-color: var(--color-b);
+    border-color: var(--color-b);
+}
 .size-variant-button.active-size {
-    background: #EDF0F8;
+    background: var(--color-white-3);
     color: #000;
+}
+.hover-icon-reverse:hover svg{
+    filter: invert(1);
 }
 
 .quantity-button{
     background: #F3F3F3;
     padding: 16px 28px;
+}
+.quantity-button-sm{
+    padding: 12.3px 20px;
+
 }
 .quantity-button input[type=number]{
     appearance: none;
@@ -995,9 +1054,20 @@ div#productVIdeoModal {
   }
 }
 
-
-
-
+.single-cart-items:not(:last-child){
+    border-bottom: 1px solid var(--color-para-light-3);
+    padding-bottom: 24px;
+}
+.cart-short-product-items:not(:last-child){
+    padding-bottom: 8px;
+}
+.new-color-border{
+    color: var(--color-para-light-3);
+    opacity: 1;
+}
+.light-color-placeholder::placeholder{
+    color: var(--color-para-light-3);
+}
 
 /* ======================================
 Footer

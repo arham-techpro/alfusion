@@ -61,6 +61,15 @@ $(document).ready(function(){
         
     });
 
+    $("#root-items-select").click(function(){
+        $(this).toggleClass('checked');
+        if($(this).hasClass('checked')){
+            $('.single-product-select').prop("checked", true);
+        }else{
+            $('.single-product-select').prop("checked", false);
+
+        }
+    });
 
 
 });
