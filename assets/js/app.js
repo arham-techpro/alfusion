@@ -71,6 +71,15 @@ $(document).ready(function(){
         }
     });
 
+    $("#checkoutBtn").click(function(){
+        $('.success-modal').toggleClass('open-modal');
+        $('body').addClass('overflow-hidden');
+    });
+    $(".success-modal").click(function(){
+        $('.success-modal').toggleClass('open-modal');
+        $('body').removeClass('overflow-hidden');
+    });
+
 
 });
 

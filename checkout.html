@@ -275,10 +275,12 @@
                             <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">0</span>
                             <img src="./assets/img/icons/heart.svg" alt="Heart Icon">
                         </span>
-                        <span class="me-1 position-relative cursor-pointer">
-                            <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">3</span>
-                            <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
-                        </span>
+                        <a href="cart.html">
+                            <span class="me-1 position-relative cursor-pointer">
+                                <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">3</span>
+                                <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
+                            </span>
+                        </a>
                         <div class="d-flex align-items-center cursor-pointer  group-hover-header">
                             <img src="./assets/img/icons/user.svg" alt="Heart Icon">
                             <a class="ms-2" href="login.html">
@@ -613,7 +615,7 @@
                             </div>
     
                             <div class="pb-2">
-                                <button type="submit" class="button xs-button bg-b border-0 justify-content-center font-14 align-items-center color-para-light-3 rounded-2 w-100  hover-bg-black-main ease-tran">Confirm your payment <b class="ps-1"> 2285tk</b> </button>
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" class="button xs-button bg-b border-0 justify-content-center font-14 align-items-center color-para-light-3 rounded-2 w-100  hover-bg-black-main ease-tran">Confirm your payment <b class="ps-1"> 2285tk</b> </button>
                                 
                             </div>
                             <div class="form-check d-flex align-items-center">
@@ -630,6 +632,28 @@
             </div>
         </div>
     </section>
+
+
+    <!-- ======================================
+        Success Modal
+    ====================================== -->
+    <div class="modal fade success-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0" style="background-color: transparent;">
+            <div class="modal-body center-element">
+                <div class="success-modal-box rounded-4 overflow-hidden pb-60 bg-white-main">
+                    <img src="./assets/img/sucess-modal-image.png" alt="Succcess Image" class="w-100">
+                    <h3 class="color-black fw-semibold text-center mb-32">Your order has been <br> accepted</h3>
+                    <p class="color-para-light-2 text-center mb-32">Order ID: 8984294820</p>
+                    <div class="text-center">
+                        <a href="index.html" class="button input-md bg-b border-0 justify-content-center align-items-center color-para-light-3 rounded-pill hover-bg-black-main ease-tran">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
 
 
 

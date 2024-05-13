@@ -24,6 +24,7 @@ ul{
     --color-a:#B70000;
     --color-b:#0077B6;
     --color-c:#FF5733;
+    --color-orange:#E59819;
     --color-white-main:#fff;
     --color-white-2:#F6F6F6;
     --color-white-3:#EDF0F8;
@@ -85,6 +86,9 @@ Reusable Components
 }
 .color-c,.hover-color-c:hover{
     color: var(--color-c);
+}
+.color-orange,.hover-color-orange:hover{
+    color: var(--color-orange);
 }
 .color-white,.hover-color-white:hover{
     color: var(--color-white-main);
@@ -154,6 +158,9 @@ Reusable Components
 }
 .bg-para-light,.hover-bg-para-light:hover{
     background: var(--color-para-light);
+}
+.bg-para-light-3,.hover-bg-para-light-3:hover{
+    background: var(--color-para-light-3);
 }
 .bg-tran{
     background: transparent;
@@ -334,6 +341,9 @@ Fonts Sizes and Specing
 .py-80{
     padding: 80px 0px;
 }
+.py-40{
+    padding: 40px 0px;
+}
 .pt-60{
     padding-top: 60px;
 }
@@ -354,6 +364,9 @@ Fonts Sizes and Specing
 }
 .p-20{
     padding: 20px;
+}
+.p-30{
+    padding: 30px
 }
 .p-24-30{
     padding: 24px 30px;
@@ -576,6 +589,16 @@ Category Slider
     justify-content: center;
 }
 
+
+.success-modal-box{
+    width: 432px;
+}
+
+.success-modal{
+    z-index: 9999999;
+}
+
+
 /* ======================================
 Featured Image Box
 ====================================== */
@@ -604,6 +627,7 @@ Single Prodct Box
 .featured-product-slider .slick-slide , .woman-fashion-slider .slick-slide,.weekly-populer-slider .slick-slide{
     margin: 0px 10px;
 }
+
 /* ------------------------------------------------- */
 .single-product-box {
     background: #FAFAFA;
@@ -682,8 +706,38 @@ Single Prodct Box
 .no-slider .single-product-box{
     width: 301px;
 }
-
-
+.single-product-info-buttons li button{
+    background: var(--color-para-light-3);
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--color-black-main);
+}
+.single-product-info-buttons {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.single-product-info-buttons li button.active,.single-product-info-buttons li button:hover{
+    background: var(--color-b) !important;
+    color: var(--color-white-main);
+}
+.progress, .progress-stacked{
+    border-radius: 4px;
+    background: rgba(230, 234, 238, 0.70);
+}
+.progress-bar{
+    background-color: var(--color-b);
+}
+.main-review-infos{
+    width: 750px;
+}
+.single-review-box{
+    margin-bottom: 40px;
+}
+.single-review-box:not(:last-child){
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-white-4);
+}
 /* ======================================
 Store
 ====================================== */
