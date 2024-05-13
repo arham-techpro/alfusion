@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
-    <title>Alfusion - Cart Page</title>
+    <title>Alfusion - Shop Category</title>
     
     <!-- Library CSS -->
     <script src="https://kit.fontawesome.com/5c1a266e25.js" crossorigin="anonymous"></script>
@@ -23,7 +23,6 @@
 <body>
     
     <div id="cover"> <span class="glyphicon glyphicon-refresh w3-spin preloader-Icon"></span> loading...</div>
-
 
     <!-- ======================================
     Header Section
@@ -271,19 +270,16 @@
                     </div>
 
                     <div class="header-top-right d-flex gap-4 align-items-center">
-                        
                         <span class="me-1 position-relative cursor-pointer">
                             <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">0</span>
                             <img src="./assets/img/icons/heart.svg" alt="Heart Icon">
                         </span>
-                        
                         <a href="cart.html">
                             <span class="me-1 position-relative cursor-pointer">
                                 <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">3</span>
                                 <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
                             </span>
                         </a>
-
                         <div class="d-flex align-items-center cursor-pointer  group-hover-header">
                             <img src="./assets/img/icons/user.svg" alt="Heart Icon">
                             <a class="ms-2" href="login.html">
@@ -298,331 +294,29 @@
             </div>
         </div>
     </header>
-
-
-    
+   
+   
     <!-- ======================================
-    Page breadcrumb
+    Faq Section
     ====================================== -->
-    <section class="page-breadcrumb my-3">
+    <section class="mt-32">
         <div class="container">
-            <div class="product-brade-cumb">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page"><a>Cart</a></li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-    </section>
 
-    <!-- ======================================
-    Card Section
-    ====================================== -->
-    <section class="cart-section">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-8">
-                    <div class="cart-page-left">
-
-                        <div class="cart-left-header mb-3">
-                            <div class="d-flex justify-content-between align-items-center bb-new-1 pb-3">
-                                <div class="form-check mb-0">
-                                    <input class="form-check-input" type="checkbox" value="" id="root-items-select">
-                                    <label class="form-check-label font-12" for="root-items-select">SELECT ALL (5 ITEMS)</label>
-                                </div>
-                                <div>
-                                    <button class="button hover-icon-reverse align-items-center xs-button border-0 font-12 color-black fw-semibold rounded-pill bg-white-3 hover-bg-b hover-color-white ease-tran"><svg width="13px" height="14px" class="me-2 ease-tran"><use xlink:href="./assets/icons/icons.svg#trash-icon"></use></svg> Delete</button>
-                                </div>
-                                
-                            </div>
-                        </div>
-
-
-                        <div class="cart-products-by-shop px-4 py-3 bboth-new-1 d-flex flex-column rounded-4 gap-y-24">
-
-                            <div class="d-flex justify-content-between single-cart-items align-items-center">
-
-                                <div class="d-flex align-items-center gap-x-24">
-                                    <div>
-                                        <input class="form-check-input m-0 single-product-select" type="checkbox" value="" id="">
-                                    </div>
-    
-                                    <div class="d-flex gap-x-24 align-items-center">
-    
-                                        <img src="./assets/img/single-image/main-image.jpg" width="100px" height="98px" class="cover-image rounded-3 bboth-new-1" alt="Product Image">
-    
-                                        <div>
-                                            <h5 class="color-black fw-semibold fs-5">Mesh Casual Sneakers For Men - Blue</h5>
-    
-                                            <div class="d-flex gap-x-48">
-                                                <div class="d-flex">
-                                                    <span class="mb-0 me-3 fw-bold color-black font-22 d-flex align-items-center mb-0"><svg class="me-1" width="14px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
-                                                    <span class="mb-0 color-para-light d-flex fw-light align-items-center mb-0 fs-6"><svg style="opacity: .6;" class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> <del>1050</del></span>
-                                                </div>
-    
-                                                <div class="d-flex align-items-center">
-                                                    <span class="color-para-light-2 font-14 me-2 pe-1">Color </span>
-                                                    <span class="product-color-variant active-color d-flex squire-xs-button rounded-circle" style="background-color: #2B2B2B;"></span>
-                                                </div>
-    
-                                                <div class="d-flex align-items-center">
-                                                    <span class="color-para-light-2 font-14 me-2 pe-1">Size </span>
-                                                    <span class="size-variant-button rounded-2 font-12 fw-semibold d-flex align-items-center cursor-pointer active-size size-variant-button-sm">40</span>
-                                                </div>
-    
-                                            </div>
-                                        </div>
-    
-                                        
-    
-                                    </div>
-                                </div>
-                                
-                                <div class="d-flex align-items-center  column-gap-3">
-                                    <div class="quantity-button quantity-button-sm rounded-pill button">
-                                        <button type="button" id="sub" class="sub fw-bold bg-tran border-0 font-14" style="color: #A3A3A3;"><i class="fa fa-minus"></i></button>
-                                        <input type="number" style="width: 55px;" id="1" value="1" min="1"  class="border-0 font-14 color-b fw-bold bg-tran text-center" />
-                                        <button type="button" id="add" class="add color-b fw-bold bg-tran border-0 font-14"><i class="fa fa-plus"></i></button>
-                                    </div>
-                                    <button class="button hover-icon-reverse border-0 rounded-pill bg-white-3 hover-bg-b ease-tran squire-lg-button center-element"><svg width="15px" height="16px" class="ease-tran"><use xlink:href="./assets/icons/icons.svg#trash-icon"></use></svg></button>
-                                </div>
-
-                            </div>
-
-                            <div class="d-flex justify-content-between single-cart-items align-items-center">
-
-                                <div class="d-flex align-items-center gap-x-24">
-                                    <div>
-                                        <input class="form-check-input m-0 single-product-select" type="checkbox" value="" id="">
-                                    </div>
-    
-                                    <div class="d-flex gap-x-24 align-items-center">
-    
-                                        <img src="./assets/img/single-image/main-image.jpg" width="100px" height="98px" class="cover-image rounded-3 bboth-new-1" alt="Product Image">
-    
-                                        <div>
-                                            <h5 class="color-black fw-semibold fs-5">Mesh Casual Sneakers For Men - Blue</h5>
-    
-                                            <div class="d-flex gap-x-48">
-                                                <div class="d-flex">
-                                                    <span class="mb-0 me-3 fw-bold color-black font-22 d-flex align-items-center mb-0"><svg class="me-1" width="14px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
-                                                    <span class="mb-0 color-para-light d-flex fw-light align-items-center mb-0 fs-6"><svg style="opacity: .6;" class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> <del>1050</del></span>
-                                                </div>
-    
-                                                <div class="d-flex align-items-center">
-                                                    <span class="color-para-light-2 font-14 me-2 pe-1">Color </span>
-                                                    <span class="product-color-variant active-color d-flex squire-xs-button rounded-circle" style="background-color: #2B2B2B;"></span>
-                                                </div>
-    
-                                                <div class="d-flex align-items-center">
-                                                    <span class="color-para-light-2 font-14 me-2 pe-1">Size </span>
-                                                    <span class="size-variant-button rounded-2 font-12 fw-semibold d-flex align-items-center cursor-pointer active-size size-variant-button-sm">40</span>
-                                                </div>
-    
-                                            </div>
-                                        </div>
-    
-                                        
-    
-                                    </div>
-                                </div>
-                                
-                                <div class="d-flex align-items-center  column-gap-3">
-                                    <div class="quantity-button quantity-button-sm rounded-pill button">
-                                        <button type="button" id="sub" class="sub fw-bold bg-tran border-0 font-14" style="color: #A3A3A3;"><i class="fa fa-minus"></i></button>
-                                        <input type="number" style="width: 55px;" id="1" value="1" min="1"  class="border-0 font-14 color-b fw-bold bg-tran text-center" />
-                                        <button type="button" id="add" class="add color-b fw-bold bg-tran border-0 font-14"><i class="fa fa-plus"></i></button>
-                                    </div>
-                                    <button class="button hover-icon-reverse border-0 rounded-pill bg-white-3 hover-bg-b ease-tran squire-lg-button center-element"><svg width="15px" height="16px" class="ease-tran"><use xlink:href="./assets/icons/icons.svg#trash-icon"></use></svg></button>
-                                </div>
-
-                            </div>
-
-                            <div class="d-flex justify-content-between single-cart-items align-items-center">
-
-                                <div class="d-flex align-items-center gap-x-24">
-                                    <div>
-                                        <input class="form-check-input m-0 single-product-select" type="checkbox" value="" id="">
-                                    </div>
-    
-                                    <div class="d-flex gap-x-24 align-items-center">
-    
-                                        <img src="./assets/img/single-image/main-image.jpg" width="100px" height="98px" class="cover-image rounded-3 bboth-new-1" alt="Product Image">
-    
-                                        <div>
-                                            <h5 class="color-black fw-semibold fs-5">Mesh Casual Sneakers For Men - Blue</h5>
-    
-                                            <div class="d-flex gap-x-48">
-                                                <div class="d-flex">
-                                                    <span class="mb-0 me-3 fw-bold color-black font-22 d-flex align-items-center mb-0"><svg class="me-1" width="14px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
-                                                    <span class="mb-0 color-para-light d-flex fw-light align-items-center mb-0 fs-6"><svg style="opacity: .6;" class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> <del>1050</del></span>
-                                                </div>
-    
-                                                <div class="d-flex align-items-center">
-                                                    <span class="color-para-light-2 font-14 me-2 pe-1">Color </span>
-                                                    <span class="product-color-variant active-color d-flex squire-xs-button rounded-circle" style="background-color: #2B2B2B;"></span>
-                                                </div>
-    
-                                                <div class="d-flex align-items-center">
-                                                    <span class="color-para-light-2 font-14 me-2 pe-1">Size </span>
-                                                    <span class="size-variant-button rounded-2 font-12 fw-semibold d-flex align-items-center cursor-pointer active-size size-variant-button-sm">40</span>
-                                                </div>
-    
-                                            </div>
-                                        </div>
-    
-                                        
-    
-                                    </div>
-                                </div>
-                                
-                                <div class="d-flex align-items-center  column-gap-3">
-                                    <div class="quantity-button quantity-button-sm rounded-pill button">
-                                        <button type="button" id="sub" class="sub fw-bold bg-tran border-0 font-14" style="color: #A3A3A3;"><i class="fa fa-minus"></i></button>
-                                        <input type="number" style="width: 55px;" id="1" value="1" min="1"  class="border-0 font-14 color-b fw-bold bg-tran text-center" />
-                                        <button type="button" id="add" class="add color-b fw-bold bg-tran border-0 font-14"><i class="fa fa-plus"></i></button>
-                                    </div>
-                                    <button class="button hover-icon-reverse border-0 rounded-pill bg-white-3 hover-bg-b ease-tran squire-lg-button center-element"><svg width="15px" height="16px" class="ease-tran"><use xlink:href="./assets/icons/icons.svg#trash-icon"></use></svg></button>
-                                </div>
-
-                            </div>
-
-                            <div class="d-flex justify-content-between single-cart-items align-items-center">
-
-                                <div class="d-flex align-items-center gap-x-24">
-                                    <div>
-                                        <input class="form-check-input m-0 single-product-select" type="checkbox" value="" id="">
-                                    </div>
-    
-                                    <div class="d-flex gap-x-24 align-items-center">
-    
-                                        <img src="./assets/img/single-image/main-image.jpg" width="100px" height="98px" class="cover-image rounded-3 bboth-new-1" alt="Product Image">
-    
-                                        <div>
-                                            <h5 class="color-black fw-semibold fs-5">Mesh Casual Sneakers For Men - Blue</h5>
-    
-                                            <div class="d-flex gap-x-48">
-                                                <div class="d-flex">
-                                                    <span class="mb-0 me-3 fw-bold color-black font-22 d-flex align-items-center mb-0"><svg class="me-1" width="14px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
-                                                    <span class="mb-0 color-para-light d-flex fw-light align-items-center mb-0 fs-6"><svg style="opacity: .6;" class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> <del>1050</del></span>
-                                                </div>
-    
-                                                <div class="d-flex align-items-center">
-                                                    <span class="color-para-light-2 font-14 me-2 pe-1">Color </span>
-                                                    <span class="product-color-variant active-color d-flex squire-xs-button rounded-circle" style="background-color: #2B2B2B;"></span>
-                                                </div>
-    
-                                                <div class="d-flex align-items-center">
-                                                    <span class="color-para-light-2 font-14 me-2 pe-1">Size </span>
-                                                    <span class="size-variant-button rounded-2 font-12 fw-semibold d-flex align-items-center cursor-pointer active-size size-variant-button-sm">40</span>
-                                                </div>
-    
-                                            </div>
-                                        </div>
-    
-                                        
-    
-                                    </div>
-                                </div>
-                                
-                                <div class="d-flex align-items-center  column-gap-3">
-                                    <div class="quantity-button quantity-button-sm rounded-pill button">
-                                        <button type="button" id="sub" class="sub fw-bold bg-tran border-0 font-14" style="color: #A3A3A3;"><i class="fa fa-minus"></i></button>
-                                        <input type="number" style="width: 55px;" id="1" value="1" min="1"  class="border-0 font-14 color-b fw-bold bg-tran text-center" />
-                                        <button type="button" id="add" class="add color-b fw-bold bg-tran border-0 font-14"><i class="fa fa-plus"></i></button>
-                                    </div>
-                                    <button class="button hover-icon-reverse border-0 rounded-pill bg-white-3 hover-bg-b ease-tran squire-lg-button center-element"><svg width="15px" height="16px" class="ease-tran"><use xlink:href="./assets/icons/icons.svg#trash-icon"></use></svg></button>
-                                </div>
-
-                            </div>
-                           
-                        </div>
-
-                    </div>
+            <h1 class="color-black fs-2 fw-500 mb-32 pb-2 text-center">Tracking your order</h1>
+            <div class="">
+                <div class="col-lg-6 mx-auto mb-22">
+                    <input type="text" class="form-control rounded-3 input-md light-color-placeholder" id="name" placeholder="Enter your order id_">
                 </div>
-
-                <div class="col-lg-4">
-                    <div class="cart-right-side rounded-3 p-3 bg-white-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h5 class="fs-6 fw-semibold mb-0">Order Summary</h5>
-                            <h5 class="fs-6 fw-semibold mb-0">Price</h5>
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center align-items-start cart-short-product-items">
-                            <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Mesh Casual Sneakers For Men - Blue</span>
-                            <div class="d-flex ps-5">
-                                <span class="font-14 mb-0 color-para-dark pe-5">x2</span>
-                                <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center align-items-start cart-short-product-items">
-                            <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Mesh Casual Sneakers For Men - Blue</span>
-                            <div class="d-flex ps-5">
-                                <span class="font-14 mb-0 color-para-dark pe-5">x2</span>
-                                <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center align-items-start cart-short-product-items">
-                            <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Mesh Casual Sneakers For Men - Blue</span>
-                            <div class="d-flex ps-5">
-                                <span class="font-14 mb-0 color-para-dark pe-5">x2</span>
-                                <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 780</span>
-                            </div>
-                        </div>
-
-                        <hr class="new-color-border">
-
-                        <div class="d-flex justify-content-between align-items-center align-items-start pb-3">
-
-                            <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Subtotal</span>
-                            <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 2240</span>
-    
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center align-items-start pb-3">
-                            
-                            <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Shipping Charge</span>
-                            <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 120</span>
-    
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center align-items-start pb-3">
-                            
-                            <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Coupon Discount (-)</span>
-                            <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg> 0.00</span>
-    
-                        </div>
-
-                        <div class="d-flex pb-3">
-                            <input type="text" class="form-control me-2 xs-button bg-tran light-color-placeholder" placeholder="Enter Voucher Code">
-                            <button type="submit" class="button xs-button bg-b border-0 justify-content-center font-14 align-items-center color-para-light-3 rounded-2 hover-bg-black-main ease-tran" style="width: 100px;">Apply</button>
-                        </div>
-                        
-                        <div class="d-flex justify-content-between align-items-center align-items-start pb-3">
-                            
-                            <span class="font-14 mb-0 color-para-dark pe-5" style="opacity: .8;">Total</span>
-                            <span class="mb-0 color-black d-flex fw-semibold align-items-center mb-0 fs-6"><svg class="me-1" width="10px" height="22px"><use xlink:href="./assets/icons/icons.svg#bdt-icon"></use></svg>2285</span>
-    
-                        </div>
-
-                        <div class="">
-                            <a href="checkout.html"><button type="submit" class="button xs-button bg-b border-0 justify-content-center font-14 align-items-center color-para-light-3 rounded-2 w-100  hover-bg-black-main ease-tran">Proceed to Checkout </button></a>
-                        </div>
-
-                    </div>
+                <div class="col-lg-3 mx-auto ">
+                    <button class="justify-content-center w-100 button normal-button rounded-pill bg-b color-white border-b-1 fw-semibold hover-bg-black-main hover-color-white">Search</button>
                 </div>
-
             </div>
+
         </div>
     </section>
 
 
-
+            
     <!-- ======================================
         Footer Product
     ====================================== -->
@@ -704,4 +398,4 @@
 
 
 </body>
-</html>
+</html>z

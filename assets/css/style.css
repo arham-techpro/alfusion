@@ -1141,6 +1141,53 @@ div#productVIdeoModal {
     background-position: right;
     background-origin: content-box;
 }
+.compary-pricary-box{
+    padding-right: 45px;
+}
+.compary-pricary-box:not(:last-child){
+    margin-bottom: 40px;
+}
+
+/* ======================================
+Faq Section
+====================================== */
+.faq-wrapper .accordion-item{
+    border-radius: 8px !important;
+    border: none !important;
+}
+.faq-wrapper .accordion-button{
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-black-main);
+}
+.accordion-button:not(.collapsed){
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.faq-wrapper .accordion-item:first-of-type >.accordion-header .accordion-button {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.faq-wrapper .accordion-button ,.faq-wrapper .accordion-body{
+    background: var(--color-white-4) !important;
+    box-shadow: none !important;
+}
+.faq-wrapper .accordion-body {
+    border-radius: 0px 0px 8px 8px;
+    color: var(--color-para-dark);
+    padding-top: 0px !important;
+}
+.faq-wrapper .accordion-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.faq-wrapper .accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+}
+.accordion-button::after{
+    background-image: url('../img/icons/faq-arrow.svg') !important;
+}
+
 /* ======================================
 Footer
 ====================================== */
