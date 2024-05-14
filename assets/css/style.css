@@ -309,6 +309,9 @@ Fonts Sizes and Specing
 .font-22{
     font-size: 22px;
 }
+.font-24{
+    font-size: 24px;
+}
 .font-14{
     font-size: 14px;
 }
@@ -651,6 +654,12 @@ Single Prodct Box
     top: 12px;
     z-index: 99;
     font-weight: 500;
+}
+.new-badge{
+    left: 12px;
+    top: 12px;
+    z-index: 99;
+    padding: 8px 10px;
 }
 .discount-badge{
     background: #FFDADA;
@@ -1188,11 +1197,23 @@ Faq Section
     background-image: url('../img/icons/faq-arrow.svg') !important;
 }
 
+.wishlist-title-box{
+    width: 670px;
+}
+
+
+
+
+
+
+
+
 /* ======================================
 Footer
 ====================================== */
 .main-footer{
     margin-top: 80px;
+    border-top: none !important;
 }
 .footer-box h4{
     letter-spacing: -0.48px;
