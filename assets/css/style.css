@@ -1295,11 +1295,29 @@ Responsive CSS
         width: 22px;
         height: 20px;
     }
+    .mobile-search-icon:hover .nav-search-box-mobile{
+        transform: scaleY(1);
+    }
+    .nav-search-box-mobile input {
+        height: 50px;
+    }
+    .nav-search-box-mobile {
+        transform: scaleY(0);
+        transform-origin: top;
+        background: white;
+        left: 0;
+        top: 35px;
+        padding: 15px 0px;
+        transition: .3s ease;
+    }
 }
 
 @media screen and (max-width:1000px){
     .gap-y-24-lg{
         row-gap: 24px;
+    }
+    .gap-y-12-lg{
+        row-gap: 12px;
     }
     .flex-warp-lg{
         flex-wrap: wrap;
@@ -1309,6 +1327,26 @@ Responsive CSS
 }
 
 @media screen and (max-width:768px){
+    .logo {
+        width: 120px;
+    }
+    .new-badge {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+    .pro-number {
+        top: -5px;
+        right: -5px;
+        font-size: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    .main-footer{
+        margin-top: 40px;
+    }
+    .shop-category-banner {
+        height: 200px;
+    }
     .custom-nav {
         position: relative;
         margin-right: 0px !important;
@@ -1338,8 +1376,11 @@ Responsive CSS
         font-size: 20px;
         font-weight: 500;
     }
-    .link-button-b {
+    .link-button-b,.accordion-body ,.compary-pricary-box p{
         font-size: 14px;
+    }
+    .compary-pricary-box {
+        padding-right: 0px;
     }
     .fs-5{
         font-size: 16px !important;
@@ -1408,7 +1449,15 @@ Responsive CSS
     .py-80{
         padding: 40px 0px;
     }
-
+    .py-60{
+        padding: 30px 0px;
+    }
+    .pt-60{
+        padding-top: 30px;
+    }
+    .pb-60{
+        padding-bottom: 30px;
+    }
     .news-box img {
         width: 100px;
         height: 100px;
@@ -1426,23 +1475,101 @@ Responsive CSS
     .footer-box.ps-3{
         padding-left: 0px !important;
     }
-    
-
+    .flex-column-md{
+        flex-direction: column;
+    }
+    .pagination-info{
+        padding-left: 20px;
+    }
+    .single-page-product{
+        justify-content: center !important;
+        column-gap: 10px;
+    }
+    .single-page-product .single-category-image {
+        height: 114px;
+        width: 100px;
+        border-radius: 16px;
+        margin: auto;
+    }
+    .single-category  a{
+        text-align: center;
+    }
+    .product-fillter-container, .product-fillter-container ul{
+        flex-wrap: wrap;
+    }
+    .cart-items-all-info{
+        flex-direction: column;
+    }
+    .align-start-md{
+        align-items: flex-start !important;
+    }
+    .cart-products-by-shop .gap-x-24{
+        column-gap: 12px;
+    }
+    .cart-products-by-shop .gap-x-48{
+        column-gap: 12px;
+    }
+    .wishlist-title-box{
+        width: 95%;
+    }
+    .wishlist-title-box .mb-0.me-3 {
+        margin-right: 10px !important;
+    }
+    .single-product-left.pe-5.me-3{
+        padding-right: 0px !important;
+        margin-right: 0px !important;
+    }
+    .main-image, .main-image img {
+        height: 300px;
+    }
+    .d-none-md{
+        display: none;
+    }
+    .cart-section.bt-1.py-3.pe-5 {
+        padding-right: 0px !important;
+    }
+    .cart-section .normal-button {
+        padding: 16px 20px;
+    }
+    .product-full-detail-table.py-80 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .single-product-info-buttons li button{
+        font-size: 16px;
+    }
+    .review-detail-box{
+        padding-top: 30px;
+    }
+    .review-detail-box .font-56{
+        font-size: 56px;
+    }
+    .main-review-infos{
+        width: 90%;
+    }
 }
-
+.d-show-sm{
+    display: none;
+}
 @media screen and (max-width:600px){
+    .d-show-sm{
+        display: block;
+    }
     .menu-category-box img {
         display: none;
     }
-    .menu-category-box h6{
+    .menu-category-box h6,.single-category p , .footer-box{
         font-size: 14px;
     }
     .custom-nav ul li:hover .submenu {
-        height: 320px;
+        height: 390px;
         padding: 20px 10px;
     }
     .sebmenu-content .row-gap-4{
         row-gap: 20px !important;
+    }
+    .fs-3 {
+        font-size: 20px !important;
     }
 }
 @media screen and (max-width:370px){

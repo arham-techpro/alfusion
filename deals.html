@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/lib/slick/slick/slick-theme.css">
 
     <!-- Custom -->
-    <link rel="stylesheet" href="./assets/css/style.css?v5">
+    <link rel="stylesheet" href="./assets/css/style.css?v6">
 
 
 
@@ -29,7 +29,8 @@
     Header Section
     ====================================== -->
     <header class="header">
-        <div class="header-top py-2 bg-b">
+
+        <div class="header-top py-2 bg-b d-none-res">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center font-14 color-white">
                     <span><img src="./assets/img/icons/phone.svg" alt="Phone Icon"> +8801236562566</span>
@@ -56,24 +57,23 @@
 
         <div class="header-bottom">
             <div class="container">
-                <nav class="navbar navbar-expand-lg py-0">
+                <nav class="navbar navbar-expand-xxl py-0">
 
                     <a href="index.html"><img src="./assets/img/logo.png" alt="Logo" class="logo"></a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+                    
 
                     <div class="collapse navbar-collapse custom-nav" id="navbarNavDropdown">
                         <ul class="navbar-nav align-items-center ">
-                            <li class="nav-item position-relative ">
-                                <a class="nav-link p-0 fs-6 fw-bold hover-color-b" aria-current="page" href="categories.html"><i class="fa fa-bars pe-2"></i> Categories </a>
+
+                            <li class="nav-item position-relative">
+                                <a class="nav-link p-0 fs-6 fw-bold hover-color-b main-category-button" aria-current="page" href="categories.html"><i class="fa fa-bars pe-2"></i> Categories </a>
                                 <div class="submenu position-absolute rounded-3">
                                     <div class="sebmenu-content">
                                         <h3 class="font-20 mb-4 pb-3 fw-semibold">Categories</h3>
                                         <div class="row row-gap-4">
 
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-6 col-6">
                                                 <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/category-images/mens.jpg" alt="Category Image" class="cover-image rounded-3">
@@ -85,7 +85,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-6 col-6">
                                                 <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/category-images/cosmetics.jpg" alt="Category Image" class="cover-image rounded-3">
@@ -97,7 +97,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-6 col-6">
                                                 <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/discount-2.jpg" alt="Category Image" class="cover-image rounded-3">
@@ -109,7 +109,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-6 col-6">
                                                 <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/single-image/main-image-3.jpg" alt="Category Image" class="cover-image rounded-3">
@@ -122,7 +122,7 @@
 
                                             </div>
 
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-6 col-6">
                                                 <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/product-images/kids-1.jpg" alt="Category Image" class="cover-image rounded-3">
@@ -135,7 +135,7 @@
 
                                             </div>
 
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-6 col-6">
                                                 <a href="shop-category.html">
                                                     <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
                                                         <img width="58px" height="62px" src="./assets/img/store-2.jpg" alt="Category Image" class="cover-image rounded-3">
@@ -148,19 +148,34 @@
 
                                             </div>
 
+                                            <div class="col-12 d-show-sm">
+                                                <a href="categories.html">
+                                                    <div class="menu-category-box card-animation p-2 rounded-2 color-black d-flex align-items-center column-gap-3">
+                                                       
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">All Categories</h6>
+                                                            <p class="mb-0 color-para-dark font-12">view all categoris</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </li>
+
                             <li class="nav-item"><a class="nav-link p-0 color-black hover-color-b" href="deals.html">Deals</a></li>
                             <li class="nav-item"><a class="nav-link p-0 color-black hover-color-b" href="new-collection.html">Whats a New</a></li>
                         
                         </ul>
                     </div>
 
-                    <div class="header-search position-relative">
+                    <div class="header-search position-relative d-none-res">
 
                         <div class="header-search-container">
+                            
                             <input type="text" class="ps-3 border-b ease-tran font-14 w-100 hover-border-a rounded-pill b-1" placeholder="Search for products, brand and more...">
                             <img src="./assets/img/icons/search.svg" alt="Search Icon" class="position-absolute top-50 search_icon">
                         </div>
@@ -271,6 +286,17 @@
                     </div>
 
                     <div class="header-top-right d-flex gap-4 align-items-center">
+
+                        <div class="mobile-search-icon">
+                            <img src="./assets/img/icons/search-mobile.svg" alt="Heart Icon" class="">
+                            <div class="nav-search-box-mobile position-absolute w-100">
+                                <input type="text" class="ps-3 border-b ease-tran font-14 w-100 hover-border-a rounded-pill b-1" placeholder="Search for products, brand and more...">
+                            </div>
+
+                        </div>
+
+                        
+                        
                         <a href="wishlist.html">
                             <span class="me-1 position-relative cursor-pointer">
                                 <span class="pro-number position-absolute color-white center-element rounded-pill bg-a">0</span>
@@ -283,19 +309,26 @@
                                 <img src="./assets/img/icons/cart.svg" alt="Heart Icon">
                             </span>
                         </a>
-                        <div class="d-flex align-items-center cursor-pointer  group-hover-header">
-                            <img src="./assets/img/icons/user.svg" alt="Heart Icon">
-                            <a class="ms-2" href="login.html">
-                                <span class="color-para-light">My Account</span>
-                                <p class="color-black fw-bold mb-0 ease-tran">Login</p>
-                            </a>
-                        </div>
+                        <a href="login.html">
+                            <div class="d-flex align-items-center cursor-pointer column-gap-2  group-hover-header">
+                                <img src="./assets/img/icons/user.svg" alt="Heart Icon">
+                                <div class="d-none-res">
+                                    <span class="color-para-light">My Account</span>
+                                    <p class="color-black fw-bold mb-0 ease-tran">Login</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+
+                    <!-- <div class="mobile-nav-button">
+                        <button class="nav-link p-0 border-0 fs-6 fw-bold hover-color-b" ><i class="fa fa-bars pe-2"></i> Categories </button>
+                    </div> -->
                     
 
                 </nav>
             </div>
         </div>
+
     </header>
 
 
@@ -312,7 +345,7 @@
                 <div class="custom-tab-item">
                     <div class="row gap-y-24">
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="single-product-box position-relative overflow-hidden rounded-4">
                                  <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
                                 <div class="single-product-image mb-2">
@@ -340,7 +373,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="single-product-box position-relative overflow-hidden rounded-4">
                                  <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
                                 <div class="single-product-image mb-2">
@@ -368,7 +401,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="single-product-box position-relative overflow-hidden rounded-4">
                                  <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
                                 <div class="single-product-image mb-2">
@@ -396,7 +429,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="single-product-box position-relative overflow-hidden rounded-4">
                                  <span class="favourite color-black bg-white-main hover-bg-b hover-color-white ease-tran rounded-pill squire-sm-button content-center position-absolute"><i class="fa fa-heart fw-normal fs-6"></i></span>
                                 <div class="single-product-image mb-2">
@@ -439,15 +472,15 @@
     <!-- ======================================
      Weekly Populer Product
     ====================================== -->
-    <section class="category-section pt-80">
+    <section class="category-section py-80">
         <div class="container">
             <div class="mb-32 d-flex justify-content-between">
                 <h3 class="sec-title color-black mb-0">Get upto 80% off</h3>
             </div>
 
-            <div class="row">
+            <div class="row gap-y-24-lg">
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="offer-box card-animation rounded-3 overflow-hidden" style="background: #D3F7ED;">
                         <div class="p-20 pt-3" style="color:#033023">
                             <p class="color-black fw-bold font-20 mb-0">Save</p>
@@ -460,7 +493,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="offer-box card-animation rounded-3 overflow-hidden" style="background: #F6F3D4;">
                         <div class="p-20 pt-3" style="color:#968900">
                             <p class="color-black fw-bold font-20 mb-0">Save</p>
@@ -473,7 +506,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="offer-box card-animation rounded-3 overflow-hidden" style="background: #F2E4D9;">
                         <div class="p-20 pt-3" style="color:#90613F">
                             <p class="color-black fw-bold font-20 mb-0">Save</p>
@@ -486,7 +519,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="offer-box card-animation rounded-3 overflow-hidden" style="background: #FADCDC;">
                         <div class="p-20 pt-3" style="color:#8F1D20">
                             <p class="color-black fw-bold font-20 mb-0">Save</p>
@@ -507,12 +540,12 @@
     </section>
 
 
-    <!-- ======================================
+     <!-- ======================================
         Footer Product
     ====================================== -->
     <footer class="main-footer pt-60 border-top">
         <div class="container">
-            <div class="row justify-content-between pb-60">
+            <div class="row justify-content-between pb-60 gap-y-24-lg">
                 <div class="col-lg-4">
                     <div class="footer-box color-para-dark">
                         <img src="./assets/img/logo.png" class="logo mb-4">
@@ -523,7 +556,7 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <div class="row">
+                    <div class="row gap-y-24-lg">
                         <div class="col-lg-4">
                             <div class="footer-box color-para-dark" >
                                 <p class="fw-semibold">Top categories</p>
