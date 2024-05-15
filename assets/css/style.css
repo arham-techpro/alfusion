@@ -1547,6 +1547,9 @@ Responsive CSS
     .main-review-infos{
         width: 90%;
     }
+    .sm-button {
+        padding: 6px 16px;
+    }
 }
 .d-show-sm{
     display: none;
